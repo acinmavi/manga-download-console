@@ -1,0 +1,12 @@
+C:\Users\Admin15\Documents\SharpDevelop Projects\MangaDownloadConsole\MangaDownloadConsole\obj\x86\Debug\MangaDownloadConsole.csprojResolveAssemblyReference.cache
+C:\Users\Admin15\Documents\SharpDevelop Projects\MangaDownloadConsole\MangaDownloadConsole\bin\Debug\MangaDownloadConsole.exe
+C:\Users\Admin15\Documents\SharpDevelop Projects\MangaDownloadConsole\MangaDownloadConsole\bin\Debug\MangaDownloadConsole.pdb
+C:\Users\Admin15\Documents\SharpDevelop Projects\MangaDownloadConsole\MangaDownloadConsole\obj\x86\Debug\MangaDownloadConsole.exe
+C:\Users\Admin15\Documents\SharpDevelop Projects\MangaDownloadConsole\MangaDownloadConsole\obj\x86\Debug\MangaDownloadConsole.pdb
+C:\Users\Admin15\Documents\SharpDevelop Projects\MangaDownloadConsole\MangaDownloadConsole\bin\Debug\MangaDownloadConsole.exe.config
+C:\Users\Nextop\Documents\SharpDevelop Projects\MangaDownloadConsole\MangaDownloadConsole\bin\Debug\MangaDownloadConsole.exe.config
+C:\Users\Nextop\Documents\SharpDevelop Projects\MangaDownloadConsole\MangaDownloadConsole\bin\Debug\MangaDownloadConsole.exe
+C:\Users\Nextop\Documents\SharpDevelop Projects\MangaDownloadConsole\MangaDownloadConsole\bin\Debug\MangaDownloadConsole.pdb
+C:\Users\Nextop\Documents\SharpDevelop Projects\MangaDownloadConsole\MangaDownloadConsole\obj\x86\Debug\MangaDownloadConsole.csprojResolveAssemblyReference.cache
+C:\Users\Nextop\Documents\SharpDevelop Projects\MangaDownloadConsole\MangaDownloadConsole\obj\x86\Debug\MangaDownloadConsole.exe
+C:\Users\Nextop\Documents\SharpDevelop Projects\MangaDownloadConsole\MangaDownloadConsole\obj\x86\Debug\MangaDownloadConsole.pdb

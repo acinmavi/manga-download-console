@@ -263,7 +263,7 @@ namespace MangaDownloadConsole
 		/// <param name="mangaLink"></param>
 		/// <param name="rootPath"></param>
 		/// <param name="chapterPerVol"></param>
-		public static void Do(string mangaLink,string rootPath,int chapterPerVol=5,int maxTask=5,string pdfPath=null,string startChap=null,string endChap=null)
+		public static void Do(string mangaLink,string rootPath,int chapterPerVol=5,int maxTask=5,string pdfPath=null,string startChap=null,string endChap=null,bool getFromDb=false)
 		{
 			CHAPTER_PER_VOL = chapterPerVol;
 			MAX_TASK = maxTask;
@@ -275,8 +275,16 @@ namespace MangaDownloadConsole
 			string mangaName = GetSafeMangaNameFromUrl(mangaLink);
 			mangaName = mangaName.Replace(".html","");
 			WriteLine("Manga name : "+mangaName);
-			
 			List<string> lsMangaChap = GetAllChapterLink(mangaLink);
+			
+			if(!getFromDb){
+				MangaLink data = new MangaLink();
+				data.IsActive = true;
+				data.MangaName = mangaLink;
+				data.NumberOfChapter = lsMangaChap.Count;
+				Database.InsertOrUpdate(data);
+			}
+			
 			int currentLastestChapter = lsMangaChap.Count;
 			int startMangaChapter = 0;
 			if(endChap!=null)
@@ -333,12 +341,14 @@ namespace MangaDownloadConsole
 				         }).ContinueWith(result=>
 				                {
 				                	WriteLine("Pdf creator done");
+				                	Database.Update(mangaLink,false);
 				                });
 			}
 		}
 		
 		public static List<string>  GetAllChapterLink(string mangaLink)
 		{
+			site = GetSite(mangaLink);
 			if(site==MangaSite.Manga24h)
 			{
 				return  GetAllChapterLinkInManga24h(mangaLink);
@@ -347,8 +357,7 @@ namespace MangaDownloadConsole
 				return GetChapterLinkFromComicVN(mangaLink);
 			}else if(site==MangaSite.TruyenTranhTuan)
 			{
-				return GetChapterLinkFromTTT
-					(mangaLink);
+				return GetChapterLinkFromTTT(mangaLink);
 			}else{
 				return new List<string>();
 			}
@@ -618,6 +627,7 @@ namespace MangaDownloadConsole
 				var list = doc.DocumentNode.Descendants("div")
 					.Where(tr => tr.GetAttributeValue("id", "").Contains("manga-chapter"))
 					.SelectMany(tr => tr.Descendants("a")).Select(a => a.Attributes["href"].Value)
+					.Select(x=>x.Replace("varslides_page_url_path",""))
 					.ToList();
 				if(reverse)
 				{
@@ -650,7 +660,10 @@ namespace MangaDownloadConsole
 				var e = c.IndexOf(LENGTH_CHAPTER);
 				var f = c.Substring(d+SLIDEPAGE.Length,(e-d-LENGTH_CHAPTER.Length-10));
 				var g = f.Replace("=","").Replace("[","").Replace("]","").Replace("\"","").Replace(" ","").Replace(";","");
-				var list = g.Split(new char[]{','},StringSplitOptions.RemoveEmptyEntries).OrderBy(o=>o).Select(o=> o.Replace("varslides_page_path","")).ToList();
+				var list = g.Split(new char[]{','},StringSplitOptions.RemoveEmptyEntries).OrderBy(o=>o).Select(o=> o.Replace("varslides_page_path","")).Select(o=> o.Replace("varslides_page_url_path",""))
+					.Select(o=> o.Replace("http://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?containerfocus&gadgeta&no_expand1&resize_h0&rewriteMimeimage%2F*&url",""))
+					.Select(o=> o.Replace("?imgmax3000",""))
+					.ToList();
 //				WriteLine(string.Join("\r\n",h));
 //				return h;
 				

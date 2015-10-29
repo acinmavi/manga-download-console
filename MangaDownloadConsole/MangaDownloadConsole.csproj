@@ -38,7 +38,6 @@
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <StartAction>Project</StartAction>
-    <StartArguments>-link="http://truyentranhtuan.com/remonster/" -path=D:\Manga\ -vol=20 -pdf=true -max=10 -endChap=10</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -52,11 +51,11 @@
     <Reference Include="HtmlAgilityPack">
       <HintPath>bin\Debug\HtmlAgilityPack.dll</HintPath>
     </Reference>
-    <Reference Include="IniLibrary">
-      <HintPath>lib\IniLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="itextsharp">
       <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LiteDB">
+      <HintPath>lib\LiteDB.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
       <HintPath>bin\Debug\log4net.dll</HintPath>
@@ -82,7 +81,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arguments.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="MangaChapter.cs" />
+    <Compile Include="MangaLink.cs" />
     <Compile Include="MangaVolume.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

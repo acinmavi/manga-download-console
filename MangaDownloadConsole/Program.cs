@@ -38,7 +38,7 @@ namespace MangaDownloadConsole
 			string cmdPdf = CommandLine["pdf"];
 			if(cmdLink != null){
 				Utilities.WriteLine("link value: " +
-				                  cmdLink);
+				                    cmdLink);
 				linkDefine = true;
 			}
 			else
@@ -46,35 +46,40 @@ namespace MangaDownloadConsole
 			
 			if(cmdPath != null){
 				Utilities.WriteLine("path value: " +
-				                  cmdPath);
-				pathDefine = true;
+				                    cmdPath);
 			}
-			else
-				Utilities.WriteLine("path not defined !");
+			else {
+				cmdPath = "D:\\Manga\\";
+			}
+			pathDefine = true;
 			
 			if(cmdVol != null){
 				Utilities.WriteLine("chapter per vol value: " +
-				                  cmdVol);
-				ChapinVolDefine = true;
+				                    cmdVol);
 			}
-			else
-				Utilities.WriteLine("vol not defined !");
+			else {
+				cmdVol = "20";
+			}
+			ChapinVolDefine = true;
 			
 			if(cmdMaxTask != null){
 				Utilities.WriteLine("max task value: " +
-				                  cmdMaxTask);
-				MaxTaskDefine = true;
-			}else
-				Utilities.WriteLine("max task not defined !");
+				                    cmdMaxTask);
+				
+			}else {
+				cmdMaxTask = "2";
+			}
+			MaxTaskDefine = true;
 			
 			if(cmdPdf != null){
 				Utilities.WriteLine("make pdf : " +
-				                  cmdPdf);
-				pdfDefine = true;
+				                    cmdPdf);
+				
 			}
-			else
-				Utilities.WriteLine("make pdf : " +
-				                  cmdPdf);
+			else{
+				cmdPdf="true";
+			}
+			pdfDefine = true;
 			
 			string[] listLink = null;
 			if(linkDefine)
@@ -83,7 +88,7 @@ namespace MangaDownloadConsole
 			}
 			
 			if(linkDefine && pathDefine && ChapinVolDefine && MaxTaskDefine && listLink.Length>0)
-			{				
+			{
 				foreach (var link in listLink) {
 					Utilities.Do(link,cmdPath,int.Parse(cmdVol),int.Parse(cmdMaxTask),cmdPdf);
 				}

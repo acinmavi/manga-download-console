@@ -17,11 +17,10 @@
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <NoStdLib>False</NoStdLib>
     <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <RunCodeAnalysis>False</RunCodeAnalysis>
     <SourceAnalysisOverrideSettingsFile>C:\Users\Admin15\AppData\Roaming\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
     <RunSourceAnalysis>False</RunSourceAnalysis>
-    <NoWin32Manifest>False</NoWin32Manifest>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
@@ -39,8 +38,7 @@
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <StartAction>Project</StartAction>
-    <StartArguments>-link="http://truyentranhtuan.com/legendary-moonlight-sculptor-con-duong-de-vuong/" -path=D:\Manga\ -vol=20 -pdf=true -max=10</StartArguments>
-    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartArguments>-link="http://truyentranhtuan.com/amaama-to-inazuma/" -path=D:\Manga\ -vol=20 -pdf=true -max=10</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -54,6 +52,9 @@
     <Reference Include="HtmlAgilityPack">
       <HintPath>bin\Debug\HtmlAgilityPack.dll</HintPath>
     </Reference>
+    <Reference Include="IniLibrary">
+      <HintPath>lib\IniLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="itextsharp">
       <HintPath>bin\Debug\itextsharp.dll</HintPath>
     </Reference>
@@ -64,6 +65,7 @@
       <HintPath>bin\Debug\ParallelExtensionsExtras.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>

@@ -374,33 +374,37 @@ namespace MangaDownloadConsole
 		public static Task DownloadData(string url,string fileName)
 		{
 			Task downloadTask =  Task.Run(()=>{
-			                              	for (int i = 0; i <= RETRY;i++) {
-			                              		try{
-			                              			var request = WebRequest.Create(url);
-			                              			request.Timeout = 15000;
-			                              			using(var response = request.GetResponse())
-			                              				using(var responseStream = response.GetResponseStream())
-			                              					using(var result = new MemoryStream())
+			                              	if(!File.Exists(fileName)){
+			                              		for (int i = 0; i <= RETRY;i++) {
+			                              			try{
+			                              				var request = WebRequest.Create(url);
+			                              				request.Timeout = 15000;
+			                              				using(var response = request.GetResponse())
+			                              					using(var responseStream = response.GetResponseStream())
+			                              						using(var result = new MemoryStream())
+			                              				{
+			                              					responseStream.CopyTo(result);
+			                              					System.IO.File.WriteAllBytes(fileName, result.ToArray());
+			                              				}
+			                              				WriteLine("Downloaded "+url+" ===========>"+fileName);
+			                              				break;
+			                              			}catch(Exception e)
 			                              			{
-			                              				responseStream.CopyTo(result);
-			                              				System.IO.File.WriteAllBytes(fileName, result.ToArray());
+			                              				WriteLine("got exception when download url :"+url+" Error:"+e.Message);
+			                              				if(i==RETRY)
+			                              				{
+			                              					WriteError(url+"===="+fileName);
+			                              				}
+			                              				
+			                              				if(i!=0)
+			                              				{
+			                              					WriteLine("retry "+i+" to download "+url+"===="+fileName);
+			                              				}
+			                              				Thread.Sleep(1000*(i+1));
 			                              			}
-			                              			WriteLine("Downloaded "+url+" ===========>"+fileName);
-			                              			break;
-			                              		}catch(Exception e)
-			                              		{
-			                              			WriteLine("got exception when download url :"+url+" Error:"+e.Message);
-			                              			if(i==RETRY)
-			                              			{
-			                              				WriteError(url+"===="+fileName);
-			                              			}
-			                              			
-			                              			if(i!=0)
-			                              			{
-			                              				WriteLine("retry "+i+" to download "+url+"===="+fileName);
-			                              			}
-			                              			Thread.Sleep(1000*(i+1));
 			                              		}
+			                              	}else{
+			                              		WriteLine("-----------------EXIST file " + Path.GetFileName(fileName) + " url DOWNLOADED " + url+"-------------");
 			                              	}
 			                              });
 			return downloadTask;
@@ -479,65 +483,46 @@ namespace MangaDownloadConsole
 		
 		public static void CreatePdfFromImages(string pdfName,string[] images)
 		{
-			Document doc = new Document(PageSize.A4);
-			PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(pdfName, FileMode.Create));
-			doc.Open();
-			doc.Add(new Paragraph(pdfName.Replace(".pdf","")));
-			try
-			{
-				foreach (var image in images) {
-					if(!File.Exists(image)) continue;
-					iTextSharp.text.Image jpg = iTextSharp.text.Image.GetInstance(image);
-					//Resize image depend upon your need
-					jpg.ScaleToFit(560f, 790f);
-					//Give space before image
-					jpg.SpacingBefore = 5f;
-					//Give some space after the image
-					jpg.SpacingAfter = 5f;
-					jpg.Alignment = Element.ALIGN_CENTER;
-					doc.Add(jpg);
-				}
-			}
-			catch (Exception ex)
-			{
-				WriteLine(ex.Message);
-			}
-			finally
-			{
-				try{
-					doc.Close();
-				}catch(Exception ex)
-				{
-					WriteLine(ex.Message);
-				}
-			}
+			CreatePdfFromImages(pdfName,images.ToList());
 		}
 		
 		
 		public static void CreatePdfFromImages(string pdfName,string imageFolder)
 		{
-			DirectoryInfo dirInfo = new DirectoryInfo(imageFolder);
-			List<string> extensionArray = new List<string>(){".jpg",".bmp",".gif",".ico",".jpeg",".png",".tif",".tiff",".wmf"};
-			HashSet<string> allowedExtensions = new HashSet<string>(extensionArray, StringComparer.OrdinalIgnoreCase);
-			FileInfo[] files = Array.FindAll(dirInfo.GetFiles(), f => allowedExtensions.Contains(f.Extension));
-			List<string> images = files.Select(o=>o.FullName).OrderBy(o=>o).ToList();
-			if(images.Count<= 0)
-			{
-				WriteLine("Can not found any image in "+imageFolder);
-				return;
-			}
-			//if pdfName is directory,add name to it
-			if(Directory.Exists(pdfName) && !pdfName.EndsWith(".pdf"))
-			{
-				pdfName+=(dirInfo.Name+".pdf");
-			}
-			
-			Document doc = new Document(PageSize.A4);
-			PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(pdfName, FileMode.Create));
-			doc.Open();
-			doc.Add(new Paragraph(pdfName.Replace(".pdf","")));
+			Document doc = null;
 			try
 			{
+				DirectoryInfo dirInfo = new DirectoryInfo(imageFolder);
+				List<string> extensionArray = new List<string>(){".jpg",".bmp",".gif",".ico",".jpeg",".png",".tif",".tiff",".wmf"};
+				HashSet<string> allowedExtensions = new HashSet<string>(extensionArray, StringComparer.OrdinalIgnoreCase);
+				FileInfo[] files = Array.FindAll(dirInfo.GetFiles(), f => allowedExtensions.Contains(f.Extension));
+				List<string> images = files.Select(o=>o.FullName).OrderBy(o=>o).ToList();
+				if(images.Count<= 0)
+				{
+					WriteLine("Can not found any image in "+imageFolder);
+					return;
+				}
+				//if pdfName is directory,add name to it
+				if(Directory.Exists(pdfName) && !pdfName.EndsWith(".pdf"))
+				{
+					pdfName+=(dirInfo.Name+".pdf");
+				}
+				
+				//if pdfName is exist,backup it
+				if(File.Exists(pdfName)){
+					string fileName = Path.GetFileNameWithoutExtension(pdfName);
+					string extension = Path.GetExtension(pdfName);
+					fileName += String.Format("{0:s}", DateTime.Now).Replace(":","-");
+					string backup = Path.Combine(Path.GetDirectoryName(pdfName),fileName)+ extension;
+					File.Move(pdfName,backup);
+					WriteLine("file " + pdfName + " exist,move to backup " + backup);
+				}
+				
+				doc = new Document(PageSize.A4);
+				PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(pdfName, FileMode.Create));
+				doc.Open();
+				doc.Add(new Paragraph(pdfName.Replace(".pdf","")));
+				
 				foreach (var image in images) {
 					if(!File.Exists(image)) continue;
 					iTextSharp.text.Image jpg = iTextSharp.text.Image.GetInstance(image);
@@ -548,9 +533,9 @@ namespace MangaDownloadConsole
 					//Give some space after the image
 					jpg.SpacingAfter = 5f;
 					jpg.Alignment = Element.ALIGN_CENTER;
-					WriteLine(string.Format("Add {0} to {1}",image,pdfName));
 					doc.Add(jpg);
 				}
+				WriteLine(string.Format("Add {0} images to {1}",images.Count,pdfName));
 			}
 			catch (Exception ex)
 			{
@@ -559,7 +544,9 @@ namespace MangaDownloadConsole
 			finally
 			{
 				try{
-					doc.Close();
+					if(doc!=null){
+						doc.Close();
+					}
 					WriteLine("finish create pdf :"+pdfName);
 				}catch(Exception ex)
 				{

@@ -1966,3 +1966,122 @@ varslides_page_url_pathhttp://3.bp.blogspot.com/-09gvCWqdOeE/VPv12VlyCcI/AAAAAAA
 2015-10-29 11:40:11,671 [7] INFO MangaDownloadConsole.Utilities - Add D:\Manga\amaama-to-inazuma\amaama-to-inazuma_Vol1\amaama-to-inazuma_Volume1_Chapter2_35.jpg to D:\Manga\amaama-to-inazuma\amaama-to-inazuma_Vol1.pdf
 2015-10-29 11:40:11,697 [7] INFO MangaDownloadConsole.Utilities - finish create pdf :D:\Manga\amaama-to-inazuma\amaama-to-inazuma_Vol1.pdf
 2015-10-29 11:40:11,698 [7] INFO MangaDownloadConsole.Utilities - Pdf creator done
+2015-10-29 12:00:26,226 [1] INFO MangaDownloadConsole.Utilities - Hello user,USAGE :
+2015-10-29 12:00:26,234 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="(Manga_link Manga_link)" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]
+2015-10-29 12:00:26,234 [1] INFO MangaDownloadConsole.Utilities - when () means require,[] means options.Example:
+2015-10-29 12:00:26,234 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" -path=D:\Manga\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20
+2015-10-29 12:00:26,238 [1] INFO MangaDownloadConsole.Utilities - link value: http://truyentranhtuan.com/remonster/
+2015-10-29 12:00:26,239 [1] INFO MangaDownloadConsole.Utilities - path value: D:\Manga\
+2015-10-29 12:00:26,239 [1] INFO MangaDownloadConsole.Utilities - chapter per vol value: 20
+2015-10-29 12:00:26,239 [1] INFO MangaDownloadConsole.Utilities - max task value: 10
+2015-10-29 12:00:26,239 [1] INFO MangaDownloadConsole.Utilities - make pdf : true
+2015-10-29 12:00:26,246 [1] INFO MangaDownloadConsole.Utilities - 
+
+we will get manga from link : http://truyentranhtuan.com/remonster/ 
+Save path : D:\Manga\
+Chapter per vol :20
+Make pdf : true
+2015-10-29 12:00:26,246 [1] INFO MangaDownloadConsole.Utilities - Sleep 5s before process,please check params
+2015-10-29 12:00:31,248 [1] INFO MangaDownloadConsole.Utilities - Manga name : remonster
+2015-10-29 12:03:54,871 [1] INFO MangaDownloadConsole.Utilities - Hello user,USAGE :
+2015-10-29 12:03:54,878 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="(Manga_link Manga_link)" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]
+2015-10-29 12:03:54,878 [1] INFO MangaDownloadConsole.Utilities - when () means require,[] means options.Example:
+2015-10-29 12:03:54,878 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" -path=D:\Manga\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20
+2015-10-29 12:03:54,882 [1] INFO MangaDownloadConsole.Utilities - link value: http://truyentranhtuan.com/remonster/
+2015-10-29 12:03:54,882 [1] INFO MangaDownloadConsole.Utilities - path value: D:\Manga\
+2015-10-29 12:03:54,882 [1] INFO MangaDownloadConsole.Utilities - chapter per vol value: 20
+2015-10-29 12:03:54,882 [1] INFO MangaDownloadConsole.Utilities - max task value: 10
+2015-10-29 12:03:54,882 [1] INFO MangaDownloadConsole.Utilities - make pdf : true
+2015-10-29 12:03:54,890 [1] INFO MangaDownloadConsole.Utilities - 
+
+we will get manga from link : http://truyentranhtuan.com/remonster/ 
+Save path : D:\Manga\
+Chapter per vol :20
+Make pdf : true
+2015-10-29 12:03:54,890 [1] INFO MangaDownloadConsole.Utilities - Sleep 5s before process,please check params
+2015-10-29 12:03:59,891 [1] INFO MangaDownloadConsole.Utilities - Manga name : remonster
+2015-10-29 12:56:00,312 [1] INFO MangaDownloadConsole.Utilities - Hello user,USAGE :
+2015-10-29 12:56:00,319 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="(Manga_link Manga_link)" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]
+2015-10-29 12:56:00,319 [1] INFO MangaDownloadConsole.Utilities - when () means require,[] means options.Example:
+2015-10-29 12:56:00,319 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" -path=D:\Manga\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20
+2015-10-29 12:56:00,323 [1] INFO MangaDownloadConsole.Utilities - link value: http://truyentranhtuan.com/remonster/
+2015-10-29 12:56:00,324 [1] INFO MangaDownloadConsole.Utilities - path value: D:\Manga\
+2015-10-29 12:56:00,324 [1] INFO MangaDownloadConsole.Utilities - chapter per vol value: 20
+2015-10-29 12:56:00,324 [1] INFO MangaDownloadConsole.Utilities - max task value: 10
+2015-10-29 12:56:00,324 [1] INFO MangaDownloadConsole.Utilities - make pdf : true
+2015-10-29 12:56:00,332 [1] INFO MangaDownloadConsole.Utilities - 
+
+we will get manga from link : http://truyentranhtuan.com/remonster/ 
+Save path : D:\Manga\
+Chapter per vol :20
+Make pdf : true
+2015-10-29 12:56:00,332 [1] INFO MangaDownloadConsole.Utilities - Sleep 5s before process,please check params
+2015-10-29 12:56:05,333 [1] INFO MangaDownloadConsole.Utilities - Manga name : remonster
+2015-10-29 12:58:06,041 [1] INFO MangaDownloadConsole.Utilities - Hello user,USAGE :
+2015-10-29 12:58:06,049 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="(Manga_link Manga_link)" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]
+2015-10-29 12:58:06,049 [1] INFO MangaDownloadConsole.Utilities - when () means require,[] means options.Example:
+2015-10-29 12:58:06,049 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" -path=D:\Manga\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20
+2015-10-29 12:58:06,053 [1] INFO MangaDownloadConsole.Utilities - link value: http://truyentranhtuan.com/remonster/
+2015-10-29 12:58:06,053 [1] INFO MangaDownloadConsole.Utilities - path value: D:\Manga\
+2015-10-29 12:58:06,053 [1] INFO MangaDownloadConsole.Utilities - chapter per vol value: 20
+2015-10-29 12:58:06,053 [1] INFO MangaDownloadConsole.Utilities - max task value: 10
+2015-10-29 12:58:06,053 [1] INFO MangaDownloadConsole.Utilities - make pdf : true
+2015-10-29 12:58:06,061 [1] INFO MangaDownloadConsole.Utilities - 
+
+we will get manga from link : http://truyentranhtuan.com/remonster/ 
+Save path : D:\Manga\
+Chapter per vol :20
+Make pdf : true
+2015-10-29 12:58:06,061 [1] INFO MangaDownloadConsole.Utilities - Sleep 5s before process,please check params
+2015-10-29 12:58:11,062 [1] INFO MangaDownloadConsole.Utilities - Manga name : remonster
+2015-10-29 12:58:32,313 [1] INFO MangaDownloadConsole.Utilities - Hello user,USAGE :
+2015-10-29 12:58:32,320 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="(Manga_link Manga_link)" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]
+2015-10-29 12:58:32,320 [1] INFO MangaDownloadConsole.Utilities - when () means require,[] means options.Example:
+2015-10-29 12:58:32,320 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" -path=D:\Manga\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20
+2015-10-29 12:58:32,324 [1] INFO MangaDownloadConsole.Utilities - link value: http://truyentranhtuan.com/remonster/
+2015-10-29 12:58:32,324 [1] INFO MangaDownloadConsole.Utilities - path value: D:\Manga\
+2015-10-29 12:58:32,324 [1] INFO MangaDownloadConsole.Utilities - chapter per vol value: 20
+2015-10-29 12:58:32,324 [1] INFO MangaDownloadConsole.Utilities - max task value: 10
+2015-10-29 12:58:32,324 [1] INFO MangaDownloadConsole.Utilities - make pdf : true
+2015-10-29 12:58:32,331 [1] INFO MangaDownloadConsole.Utilities - 
+
+we will get manga from link : http://truyentranhtuan.com/remonster/ 
+Save path : D:\Manga\
+Chapter per vol :20
+Make pdf : true
+2015-10-29 12:58:32,331 [1] INFO MangaDownloadConsole.Utilities - Sleep 5s before process,please check params
+2015-10-29 12:58:37,333 [1] INFO MangaDownloadConsole.Utilities - Manga name : remonster
+2015-10-29 12:58:54,094 [1] INFO MangaDownloadConsole.Utilities - Hello user,USAGE :
+2015-10-29 12:58:54,101 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="(Manga_link Manga_link)" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]
+2015-10-29 12:58:54,101 [1] INFO MangaDownloadConsole.Utilities - when () means require,[] means options.Example:
+2015-10-29 12:58:54,102 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" -path=D:\Manga\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20
+2015-10-29 12:58:54,105 [1] INFO MangaDownloadConsole.Utilities - link value: http://truyentranhtuan.com/remonster/
+2015-10-29 12:58:54,106 [1] INFO MangaDownloadConsole.Utilities - path value: D:\Manga\
+2015-10-29 12:58:54,106 [1] INFO MangaDownloadConsole.Utilities - chapter per vol value: 20
+2015-10-29 12:58:54,106 [1] INFO MangaDownloadConsole.Utilities - max task value: 10
+2015-10-29 12:58:54,106 [1] INFO MangaDownloadConsole.Utilities - make pdf : true
+2015-10-29 12:58:54,113 [1] INFO MangaDownloadConsole.Utilities - 
+
+we will get manga from link : http://truyentranhtuan.com/remonster/ 
+Save path : D:\Manga\
+Chapter per vol :20
+Make pdf : true
+2015-10-29 12:58:54,113 [1] INFO MangaDownloadConsole.Utilities - Sleep 5s before process,please check params
+2015-10-29 12:58:59,115 [1] INFO MangaDownloadConsole.Utilities - Manga name : remonster
+2015-10-29 12:59:24,516 [1] INFO MangaDownloadConsole.Utilities - Hello user,USAGE :
+2015-10-29 12:59:24,524 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="(Manga_link Manga_link)" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]
+2015-10-29 12:59:24,524 [1] INFO MangaDownloadConsole.Utilities - when () means require,[] means options.Example:
+2015-10-29 12:59:24,524 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" -path=D:\Manga\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20
+2015-10-29 12:59:24,528 [1] INFO MangaDownloadConsole.Utilities - link value: http://truyentranhtuan.com/remonster/
+2015-10-29 12:59:24,528 [1] INFO MangaDownloadConsole.Utilities - path value: D:\Manga\
+2015-10-29 12:59:24,528 [1] INFO MangaDownloadConsole.Utilities - chapter per vol value: 20
+2015-10-29 12:59:24,528 [1] INFO MangaDownloadConsole.Utilities - max task value: 10
+2015-10-29 12:59:24,528 [1] INFO MangaDownloadConsole.Utilities - make pdf : true
+2015-10-29 12:59:24,536 [1] INFO MangaDownloadConsole.Utilities - 
+
+we will get manga from link : http://truyentranhtuan.com/remonster/ 
+Save path : D:\Manga\
+Chapter per vol :20
+Make pdf : true
+2015-10-29 12:59:24,536 [1] INFO MangaDownloadConsole.Utilities - Sleep 5s before process,please check params
+2015-10-29 12:59:29,538 [1] INFO MangaDownloadConsole.Utilities - Manga name : remonster

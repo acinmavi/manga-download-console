@@ -7,7 +7,6 @@ C:\Users\Nextop\Documents\SharpDevelop Projects\MangaDownloadConsole\MangaDownlo
 C:\Users\Nextop\Documents\SharpDevelop Projects\git\manga-download-console\MangaDownloadConsole\bin\Debug\MangaDownloadConsole.exe.config
 C:\Users\Nextop\Documents\SharpDevelop Projects\git\manga-download-console\MangaDownloadConsole\bin\Debug\MangaDownloadConsole.exe
 C:\Users\Nextop\Documents\SharpDevelop Projects\git\manga-download-console\MangaDownloadConsole\bin\Debug\MangaDownloadConsole.pdb
-C:\Users\Nextop\Documents\SharpDevelop Projects\git\manga-download-console\MangaDownloadConsole\bin\Debug\IniLibrary.dll
 C:\Users\Nextop\Documents\SharpDevelop Projects\git\manga-download-console\MangaDownloadConsole\obj\Debug\MangaDownloadConsole.csprojResolveAssemblyReference.cache
 C:\Users\Nextop\Documents\SharpDevelop Projects\git\manga-download-console\MangaDownloadConsole\obj\Debug\MangaDownloadConsole.exe
 C:\Users\Nextop\Documents\SharpDevelop Projects\git\manga-download-console\MangaDownloadConsole\obj\Debug\MangaDownloadConsole.pdb

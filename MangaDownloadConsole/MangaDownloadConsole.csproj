@@ -38,7 +38,7 @@
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <StartAction>Project</StartAction>
-    <StartArguments>-link="http://truyentranhtuan.com/amaama-to-inazuma/" -path=D:\Manga\ -vol=20 -pdf=true -max=10</StartArguments>
+    <StartArguments>-link="http://truyentranhtuan.com/remonster/" -path=D:\Manga\ -vol=20 -pdf=true -max=10 -endChap=10</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <OutputPath>bin\Release\</OutputPath>

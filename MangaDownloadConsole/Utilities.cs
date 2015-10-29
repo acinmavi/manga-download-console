@@ -263,7 +263,7 @@ namespace MangaDownloadConsole
 		/// <param name="mangaLink"></param>
 		/// <param name="rootPath"></param>
 		/// <param name="chapterPerVol"></param>
-		public static void Do(string mangaLink,string rootPath,int chapterPerVol=5,int maxTask=5,string pdfPath=null)
+		public static void Do(string mangaLink,string rootPath,int chapterPerVol=5,int maxTask=5,string pdfPath=null,string startChap=null,string endChap=null)
 		{
 			CHAPTER_PER_VOL = chapterPerVol;
 			MAX_TASK = maxTask;
@@ -277,6 +277,29 @@ namespace MangaDownloadConsole
 			WriteLine("Manga name : "+mangaName);
 			
 			List<string> lsMangaChap = GetAllChapterLink(mangaLink);
+			int currentLastestChapter = lsMangaChap.Count;
+			int startMangaChapter = 0;
+			if(endChap!=null)
+			{
+				int iEndChap = int.Parse(endChap)-1;
+				if(iEndChap<currentLastestChapter){
+					currentLastestChapter = iEndChap;
+				}
+			}
+			if(startChap!=null)
+			{
+				int iStartChap = int.Parse(startChap)-1;
+				if(iStartChap > currentLastestChapter){
+					startMangaChapter = 0;
+				}else {
+					if(iStartChap > startMangaChapter){
+						startMangaChapter = iStartChap;
+					}
+				}
+				
+			}
+			int end = ((currentLastestChapter == lsMangaChap.Count)?(currentLastestChapter-1):currentLastestChapter) -startMangaChapter+1;
+			lsMangaChap = lsMangaChap.GetRange(startMangaChapter,end);
 //			WriteLine("All chapter link:"+ string.Join(NEWLINE,lsMangaChap)+NEWLINE);
 			WriteLine(string.Format("Found {0} chapters",lsMangaChap.Count));
 			var lsVol = GetMangaVolumes(lsMangaChap,mangaName,CHAPTER_PER_VOL,rootPath);

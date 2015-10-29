@@ -19,7 +19,7 @@ namespace MangaDownloadConsole
 			Utilities.WriteLine("Hello user,USAGE :");
 			Utilities.WriteLine("MangaDownloadConsole.exe -link=\"(Manga_link Manga_link)\" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]");
 			Utilities.WriteLine("when () means require,[] means options.Example:");
-			string example = "MangaDownloadConsole.exe -link=\"http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html\" -path=D:\\Manga\\ -vol=10 -max=10 -pdf=true";
+			string example = "MangaDownloadConsole.exe -link=\"http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html\" -path=D:\\Manga\\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20";
 			Utilities.WriteLine(example);
 			// Create new stopwatch
 			Stopwatch stopwatch = new Stopwatch();
@@ -36,6 +36,8 @@ namespace MangaDownloadConsole
 			string cmdVol = CommandLine["vol"];
 			string cmdMaxTask = CommandLine["max"];
 			string cmdPdf = CommandLine["pdf"];
+			string startChap = CommandLine["startChap"];
+			string endChap = CommandLine["endChap"];
 			if(cmdLink != null){
 				Utilities.WriteLine("link value: " +
 				                    cmdLink);
@@ -90,17 +92,17 @@ namespace MangaDownloadConsole
 			if(linkDefine && pathDefine && ChapinVolDefine && MaxTaskDefine && listLink.Length>0)
 			{
 				foreach (var link in listLink) {
-					Utilities.Do(link,cmdPath,int.Parse(cmdVol),int.Parse(cmdMaxTask),cmdPdf);
+					Utilities.Do(link,cmdPath,int.Parse(cmdVol),int.Parse(cmdMaxTask),cmdPdf,startChap,endChap);
 				}
 			}else if(linkDefine && pathDefine && ChapinVolDefine && listLink.Length>0)
 			{
 				foreach (var link in listLink) {
-					Utilities.Do(link,cmdPath,int.Parse(cmdVol),5,cmdPdf);
+					Utilities.Do(link,cmdPath,int.Parse(cmdVol),5,cmdPdf,startChap,endChap);
 				}
 			}else if(linkDefine && pathDefine && listLink.Length>0)
 			{
 				foreach (var link in listLink) {
-					Utilities.Do(link,cmdPath,10,5,cmdPdf);
+					Utilities.Do(link,cmdPath,10,5,cmdPdf,startChap,endChap);
 				}
 				
 			}else if(pathDefine && pdfDefine&&(!linkDefine))

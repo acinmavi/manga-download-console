@@ -11,3 +11,10 @@ C:\Users\Nextop\Documents\SharpDevelop Projects\git\manga-download-console\Manga
 C:\Users\Nextop\Documents\SharpDevelop Projects\git\manga-download-console\MangaDownloadConsole\obj\Debug\MangaDownloadConsole.exe
 C:\Users\Nextop\Documents\SharpDevelop Projects\git\manga-download-console\MangaDownloadConsole\obj\Debug\MangaDownloadConsole.pdb
 C:\Users\Nextop\Documents\SharpDevelop Projects\git\manga-download-console\MangaDownloadConsole\bin\Debug\LiteDB.dll
+D:\Workspace\manga-download-console\manga-download-console\MangaDownloadConsole\obj\Debug\MangaDownloadConsole.csprojResolveAssemblyReference.cache
+D:\Workspace\manga-download-console\manga-download-console\MangaDownloadConsole\obj\Debug\MangaDownloadConsole.exe
+D:\Workspace\manga-download-console\manga-download-console\MangaDownloadConsole\bin\Debug\MangaDownloadConsole.exe.config
+D:\Workspace\manga-download-console\manga-download-console\MangaDownloadConsole\bin\Debug\MangaDownloadConsole.exe
+D:\Workspace\manga-download-console\manga-download-console\MangaDownloadConsole\bin\Debug\MangaDownloadConsole.pdb
+D:\Workspace\manga-download-console\manga-download-console\MangaDownloadConsole\bin\Debug\LiteDB.dll
+D:\Workspace\manga-download-console\manga-download-console\MangaDownloadConsole\obj\Debug\MangaDownloadConsole.pdb

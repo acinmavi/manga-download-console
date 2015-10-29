@@ -423,6 +423,7 @@ namespace MangaDownloadConsole
 			                              			}catch(Exception e)
 			                              			{
 			                              				WriteLine("got exception when download url :"+url+" Error:"+e.Message);
+			                              				url = ValidateTTTImageLink(url);
 			                              				if(i==RETRY)
 			                              				{
 			                              					WriteError(url+"===="+fileName);
@@ -528,7 +529,9 @@ namespace MangaDownloadConsole
 				List<string> extensionArray = new List<string>(){".jpg",".bmp",".gif",".ico",".jpeg",".png",".tif",".tiff",".wmf"};
 				HashSet<string> allowedExtensions = new HashSet<string>(extensionArray, StringComparer.OrdinalIgnoreCase);
 				FileInfo[] files = Array.FindAll(dirInfo.GetFiles(), f => allowedExtensions.Contains(f.Extension));
-				List<string> images = files.Select(o=>o.FullName).OrderBy(o=>o).ToList();
+				List<string> images = files.Select(o=>o.FullName)
+					.OrderBy(o=>o)
+					.ToList();
 				if(images.Count<= 0)
 				{
 					WriteLine("Can not found any image in "+imageFolder);
@@ -628,6 +631,9 @@ namespace MangaDownloadConsole
 					.Where(tr => tr.GetAttributeValue("id", "").Contains("manga-chapter"))
 					.SelectMany(tr => tr.Descendants("a")).Select(a => a.Attributes["href"].Value)
 					.Select(x=>x.Replace("varslides_page_url_path",""))
+					.Select(x=>x.Split(new char[]{' '})[0])
+					.Select(x=>x.Split(new string[]{ Environment.NewLine },StringSplitOptions.None)[0])
+					.Select(x=>ValidateTTTImageLink(x))
 					.ToList();
 				if(reverse)
 				{
@@ -642,6 +648,16 @@ namespace MangaDownloadConsole
 			}
 		}
 		
+		public static string ValidateTTTImageLink(string link){
+			List<string> extensionArray = new List<string>(){".jpg",".bmp",".gif",".ico",".jpeg",".png",".tif",".tiff",".wmf",".JPG",".BMP",".GIF",".ICO",".JPEG",".PNG",".TIF",".TIFF",".WMF"};
+			foreach (var extension in extensionArray) {
+				if(link.Contains(extension)){
+					int index = link.IndexOf(extension);
+					link = link.Substring(0,index+extension.Length);
+				}
+			}
+			return link;
+		}
 		
 		public static Dictionary<string,string> GetImageLinkFromChapterTTT(MangaChapter ChapterLink,int volume,string rootPath,int maxVolume,int maxChapter)
 		{
@@ -660,9 +676,11 @@ namespace MangaDownloadConsole
 				var e = c.IndexOf(LENGTH_CHAPTER);
 				var f = c.Substring(d+SLIDEPAGE.Length,(e-d-LENGTH_CHAPTER.Length-10));
 				var g = f.Replace("=","").Replace("[","").Replace("]","").Replace("\"","").Replace(" ","").Replace(";","");
-				var list = g.Split(new char[]{','},StringSplitOptions.RemoveEmptyEntries).OrderBy(o=>o).Select(o=> o.Replace("varslides_page_path","")).Select(o=> o.Replace("varslides_page_url_path",""))
+				var list = g.Split(new char[]{','},StringSplitOptions.RemoveEmptyEntries)
+//					.OrderBy(o=>o)
+					.Select(o=> o.Replace("varslides_page_path","")).Select(o=> o.Replace("varslides_page_url_path",""))
 					.Select(o=> o.Replace("http://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?containerfocus&gadgeta&no_expand1&resize_h0&rewriteMimeimage%2F*&url",""))
-					.Select(o=> o.Replace("?imgmax3000",""))
+					.Select(o=> ValidateTTTImageLink(o))
 					.ToList();
 //				WriteLine(string.Join("\r\n",h));
 //				return h;
@@ -688,6 +706,7 @@ namespace MangaDownloadConsole
 				var list = doc.DocumentNode.Descendants("div")
 					.Where(tr => tr.GetAttributeValue("class", "").Contains("warp_box_ch"))
 					.SelectMany(tr => tr.Descendants("a")).Select(a => a.Attributes["href"].Value)
+					.Select(o=> ValidateTTTImageLink(o))
 					.ToList();
 				if(reverse)
 				{
@@ -712,6 +731,7 @@ namespace MangaDownloadConsole
 			var list = doc.DocumentNode.Descendants("textarea")
 				.Where(tr => tr.GetAttributeValue("id", "").Contains("txtarea"))
 				.SelectMany(tr => tr.Descendants("img")).Select(a => a.Attributes["src"].Value)
+				.Select(o=> ValidateTTTImageLink(o))
 				.ToList();
 			if(list.Count <10)
 			{

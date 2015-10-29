@@ -137,5 +137,22 @@ namespace MangaDownloadConsole
 				}
 			}
 		}
+		
+		public static void ManualInsert(List<string> mangaLinks)
+		{
+			using(var db = new LiteDatabase(Path.Combine(Environment.CurrentDirectory,LITE_DB)))
+			{
+				// Get customer collection
+				var col = db.GetCollection<MangaLink>(SCHEMA);
+				foreach (var mangaLink in mangaLinks) {
+					List<string> lsMangaChap = Utilities.GetAllChapterLink(mangaLink);
+					MangaLink data = new MangaLink();
+					data.IsActive = true;
+					data.MangaName = mangaLink;
+					data.NumberOfChapter = lsMangaChap.Count;
+					InsertOrUpdate(data);
+				}
+			}
+		}
 	}
 }

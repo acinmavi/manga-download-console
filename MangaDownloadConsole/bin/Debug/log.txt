@@ -1,0 +1,557 @@
+2015-10-29 16:03:53,876 [1] INFO MangaDownloadConsole.Utilities - Hello user,USAGE :
+2015-10-29 16:03:53,883 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="(Manga_link Manga_link)" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]
+2015-10-29 16:03:53,883 [1] INFO MangaDownloadConsole.Utilities - when () means require,[] means options.Example:
+2015-10-29 16:03:53,883 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" -path=D:\Manga\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20OR -add="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" to update or add to database
+2015-10-29 16:03:53,885 [1] INFO MangaDownloadConsole.Utilities - link not defined,will get from db!
+2015-10-29 16:03:53,961 [1] INFO MangaDownloadConsole.Utilities - 
+
+we will get manga from link : http://truyentranhtuan.com/dragon-ball-after/ 
+Save path : D:\Manga\
+Chapter per vol :20
+Make pdf : true
+2015-10-29 16:03:53,961 [1] INFO MangaDownloadConsole.Utilities - Sleep 5s before process,please check params
+2015-10-29 16:03:58,962 [1] INFO MangaDownloadConsole.Utilities - Manga name : dragon-ball-after
+2015-10-29 16:03:59,037 [1] INFO MangaDownloadConsole.Utilities - Found 7 chapters
+2015-10-29 16:03:59,062 [1] INFO MangaDownloadConsole.Utilities - Chapter 1 has 24 image links
+2015-10-29 16:03:59,086 [1] INFO MangaDownloadConsole.Utilities - Chapter 2 has 24 image links
+2015-10-29 16:03:59,107 [1] INFO MangaDownloadConsole.Utilities - Chapter 3 has 32 image links
+2015-10-29 16:03:59,136 [1] INFO MangaDownloadConsole.Utilities - Chapter 4 has 23 image links
+2015-10-29 16:03:59,153 [1] INFO MangaDownloadConsole.Utilities - Chapter 5 has 25 image links
+2015-10-29 16:03:59,177 [1] INFO MangaDownloadConsole.Utilities - Chapter 6 has 26 image links
+2015-10-29 16:03:59,194 [1] INFO MangaDownloadConsole.Utilities - Chapter 7 has 25 image links
+2015-10-29 16:03:59,195 [1] INFO MangaDownloadConsole.Utilities - Volume 1 has 7 chapter links
+2015-10-29 16:03:59,233 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_02.jpg url DOWNLOADED http://i.imgur.com/0c35dCO.png-------------
+2015-10-29 16:03:59,233 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_01.jpg url DOWNLOADED 
+
+
+http://i.imgur.com/eR5pcWk.png-------------
+2015-10-29 16:03:59,233 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_01.jpg url DOWNLOADED 
+
+
+http://i.imgur.com/TCWWuUF.jpg-------------
+2015-10-29 16:03:59,234 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_02.jpg url DOWNLOADED http://i.imgur.com/1rnRT0A.jpg-------------
+2015-10-29 16:03:59,234 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_04.jpg url DOWNLOADED http://i.imgur.com/2d1SJE7.png-------------
+2015-10-29 16:03:59,234 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_03.jpg url DOWNLOADED http://i.imgur.com/3DAviri.jpg-------------
+2015-10-29 16:03:59,234 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_04.jpg url DOWNLOADED http://i.imgur.com/5nQo8Fz.jpg-------------
+2015-10-29 16:03:59,234 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_06.jpg url DOWNLOADED http://i.imgur.com/BuBIFuG.jpg-------------
+2015-10-29 16:03:59,235 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_05.jpg url DOWNLOADED http://i.imgur.com/7jc9H1x.jpg-------------
+2015-10-29 16:03:59,235 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_07.jpg url DOWNLOADED http://i.imgur.com/cEn4Vtv.jpg-------------
+2015-10-29 16:03:59,235 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_03.jpg url DOWNLOADED http://i.imgur.com/28VH5cy.png-------------
+2015-10-29 16:03:59,236 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_06.jpg url DOWNLOADED http://i.imgur.com/42fW9sO.png-------------
+2015-10-29 16:03:59,236 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_05.jpg url DOWNLOADED http://i.imgur.com/3l6uizr.png-------------
+2015-10-29 16:03:59,236 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_08.jpg url DOWNLOADED http://i.imgur.com/CfUe5Wi.jpg-------------
+2015-10-29 16:03:59,237 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_07.jpg url DOWNLOADED http://i.imgur.com/7hI1uIW.png
+
+if(slides_page_url_path.length>0){
+type_server2
+}else{
+type_server1
+}
+
+if(type_server!1){
+slides_pageslides_page_url_path
+}else{
+slides_pageslides_page-------------
+2015-10-29 16:03:59,237 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_09.jpg url DOWNLOADED http://i.imgur.com/EZZEVNA.jpg-------------
+2015-10-29 16:03:59,237 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_09.jpg url DOWNLOADED http://i.imgur.com/ESOtwgJ.png-------------
+2015-10-29 16:03:59,237 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_10.jpg url DOWNLOADED http://i.imgur.com/glfZcyG.jpg-------------
+2015-10-29 16:03:59,238 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_08.jpg url DOWNLOADED http://i.imgur.com/B5f23dz.png-------------
+2015-10-29 16:03:59,238 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_13.jpg url DOWNLOADED http://i.imgur.com/j0Y26lN.jpg-------------
+2015-10-29 16:03:59,238 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_11.jpg url DOWNLOADED http://i.imgur.com/Gze4btF.jpg-------------
+2015-10-29 16:03:59,238 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_14.jpg url DOWNLOADED http://i.imgur.com/jTeAc1b.jpg-------------
+2015-10-29 16:03:59,239 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_12.jpg url DOWNLOADED http://i.imgur.com/IEIdDMV.jpg-------------
+2015-10-29 16:03:59,240 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_17.jpg url DOWNLOADED http://i.imgur.com/m9sbQAV.jpg
+
+if(slides_page_url_path.length>0){
+type_server2
+}else{
+type_server1
+}
+
+if(type_server!1){
+slides_pageslides_page_url_path
+}else{
+slides_pageslides_page-------------
+2015-10-29 16:03:59,240 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_18.jpg url DOWNLOADED http://i.imgur.com/nGU33Ig.jpg-------------
+2015-10-29 16:03:59,240 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_15.jpg url DOWNLOADED http://i.imgur.com/KGtiguL.jpg-------------
+2015-10-29 16:03:59,241 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_11.jpg url DOWNLOADED http://i.imgur.com/J4LziW2.png-------------
+2015-10-29 16:03:59,241 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_10.jpg url DOWNLOADED http://i.imgur.com/FkXpSX7.png-------------
+2015-10-29 16:03:59,241 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_16.jpg url DOWNLOADED http://i.imgur.com/lyNM8eF.jpg-------------
+2015-10-29 16:03:59,242 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_19.jpg url DOWNLOADED http://i.imgur.com/r1JsiGt.jpg-------------
+2015-10-29 16:03:59,242 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_13.jpg url DOWNLOADED http://i.imgur.com/LxhD38Y.png-------------
+2015-10-29 16:03:59,242 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_20.jpg url DOWNLOADED http://i.imgur.com/sM6T6Oy.jpg-------------
+2015-10-29 16:03:59,242 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_23.jpg url DOWNLOADED http://i.imgur.com/v6jZv7n.jpg-------------
+2015-10-29 16:03:59,243 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_21.jpg url DOWNLOADED http://i.imgur.com/UNfKT3R.jpg-------------
+2015-10-29 16:03:59,244 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_22.jpg url DOWNLOADED http://i.imgur.com/V0eUmU3.jpg-------------
+2015-10-29 16:03:59,244 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_12.jpg url DOWNLOADED http://i.imgur.com/Ll7A35r.png-------------
+2015-10-29 16:03:59,244 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_15.jpg url DOWNLOADED http://i.imgur.com/PQxcy7U.png-------------
+2015-10-29 16:03:59,244 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_14.jpg url DOWNLOADED http://i.imgur.com/oDNdcDs.png-------------
+2015-10-29 16:03:59,245 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_24.jpg url DOWNLOADED http://i.imgur.com/Vfc8AIQ.jpg-------------
+2015-10-29 16:03:59,245 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_17.jpg url DOWNLOADED http://i.imgur.com/sya5GSe.png-------------
+2015-10-29 16:03:59,245 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_18.jpg url DOWNLOADED http://i.imgur.com/t7chWXt.png-------------
+2015-10-29 16:03:59,246 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_19.jpg url DOWNLOADED http://i.imgur.com/UgEpBXZ.png-------------
+2015-10-29 16:03:59,246 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_02.jpg url DOWNLOADED http://1.bp.blogspot.com/-f3s2TKbjb9Y/VQjxZRuDQ-I/AAAAAAAASOw/G2IsFpcMwYY/s0/1.png-------------
+2015-10-29 16:03:59,246 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_03.jpg url DOWNLOADED http://1.bp.blogspot.com/-hUZfQ3FjsnY/VQjyz9UlB2I/AAAAAAAASRA/wPyqs64avlk/s0/1.png-------------
+2015-10-29 16:03:59,246 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_20.jpg url DOWNLOADED http://i.imgur.com/uP5aPKW.png-------------
+2015-10-29 16:03:59,247 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_01.jpg url DOWNLOADED 
+
+
+http://2.bp.blogspot.com/-980IqRIcc04/VQjwvQMetcI/AAAAAAAASNw/nx8iE5MDMkw/s0/1.jpg-------------
+2015-10-29 16:03:59,247 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_21.jpg url DOWNLOADED http://i.imgur.com/wFan8wq.png-------------
+2015-10-29 16:03:59,247 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_05.jpg url DOWNLOADED http://1.bp.blogspot.com/-iGDB6uXepPY/VQjxq6IdQbI/AAAAAAAASPI/cNtv1o_zBOs/s0/1.png-------------
+2015-10-29 16:03:59,247 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_22.jpg url DOWNLOADED http://i.imgur.com/Wkezyf7.png-------------
+2015-10-29 16:03:59,248 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_06.jpg url DOWNLOADED http://1.bp.blogspot.com/-lGbUOKIS_ks/VQjxPzPpdzI/AAAAAAAASOg/q2hZQgM8Yo8/s0/1.png-------------
+2015-10-29 16:03:59,248 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_04.jpg url DOWNLOADED http://1.bp.blogspot.com/-I_ghCNqMCJQ/VQjyclVKTQI/AAAAAAAASQY/MjmFqPpxEjQ/s0/1.png-------------
+2015-10-29 16:03:59,249 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_07.jpg url DOWNLOADED http://1.bp.blogspot.com/-tR3IW97xMhc/VQjxl70tpZI/AAAAAAAASPA/ZnE1C8LXxqQ/s0/1.png-------------
+2015-10-29 16:03:59,249 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_09.jpg url DOWNLOADED http://1.bp.blogspot.com/-wuC0pEnC3K4/VQjzMeR_vtI/AAAAAAAASRo/N768kZCpklc/s0/1.png
+
+if(slides_page_url_path.length>0){
+type_server2
+}else{
+type_server1
+}
+
+if(type_server!1){
+slides_pageslides_page_url_path
+}else{
+slides_pageslides_page-------------
+2015-10-29 16:03:59,250 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_16.jpg url DOWNLOADED http://i.imgur.com/SNIMLZc.png-------------
+2015-10-29 16:03:59,250 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_10.jpg url DOWNLOADED http://1.bp.blogspot.com/-xXKFhNiebvQ/VQjyrsguQvI/AAAAAAAASQw/htcDPzs7u0U/s0/1.png-------------
+2015-10-29 16:03:59,250 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_08.jpg url DOWNLOADED http://1.bp.blogspot.com/-UeuphoPTeBE/VQjw5qyGn-I/AAAAAAAASOA/PbmVEr0MUbo/s0/1.png-------------
+2015-10-29 16:03:59,251 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_11.jpg url DOWNLOADED http://2.bp.blogspot.com/-akl3UxHlPAg/VQjxKtrJMOI/AAAAAAAASOY/1nNQ6hY8ISc/s0/1.png-------------
+2015-10-29 16:03:59,251 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_13.jpg url DOWNLOADED http://3.bp.blogspot.com/-_gjALy4ViWo/VQjylhS0qZI/AAAAAAAASQo/7nQOAZFn7dk/s0/1.png-------------
+2015-10-29 16:03:59,251 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_14.jpg url DOWNLOADED http://3.bp.blogspot.com/-9SWrn_rYJ2U/VQjyvvwgNWI/AAAAAAAASQ4/2V4QRQkNqnU/s0/1.png-------------
+2015-10-29 16:03:59,253 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_15.jpg url DOWNLOADED http://3.bp.blogspot.com/-eGwPjxnXRaE/VQjw0oRUVHI/AAAAAAAASN4/7gI-gaERiWE/s0/1.png-------------
+2015-10-29 16:03:59,253 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_23.jpg url DOWNLOADED http://i.imgur.com/YEESfVT.png-------------
+2015-10-29 16:03:59,253 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_12.jpg url DOWNLOADED http://2.bp.blogspot.com/-E7f2tl_GTyI/VQjyM0CEoVI/AAAAAAAASQA/cK0BlEWKU_Q/s0/1.png-------------
+2015-10-29 16:03:59,253 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_16.jpg url DOWNLOADED http://3.bp.blogspot.com/-mgvFjYHunkE/VQjx-pDMDGI/AAAAAAAASPo/2la4ZSiKjU8/s0/1.png-------------
+2015-10-29 16:03:59,254 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_24.jpg url DOWNLOADED http://i.imgur.com/z1FbeYh.png-------------
+2015-10-29 16:03:59,254 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_17.jpg url DOWNLOADED http://3.bp.blogspot.com/-oJugys6SWcI/VQjxwM4avQI/AAAAAAAASPQ/y8d-x2enDDM/s0/1.png-------------
+2015-10-29 16:03:59,254 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_18.jpg url DOWNLOADED http://3.bp.blogspot.com/-PS7V21Qm0fE/VQjyYBbWgDI/AAAAAAAASQQ/4g2Ye3zqTZw/s0/1.png-------------
+2015-10-29 16:03:59,255 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_01.jpg url DOWNLOADED 
+
+
+http://3.bp.blogspot.com/-hoXgtAs3XaA/VhcAMUuWlAI/AAAAAAADFtw/VnQ3CKGUxfM/s0/1.jpg-------------
+2015-10-29 16:03:59,255 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_02.jpg url DOWNLOADED http://3.bp.blogspot.com/-1SL4rV9DkAo/VhcAmpVr98I/AAAAAAADFwA/KQ9bQ3zOKEU/s0/1.jpg-------------
+2015-10-29 16:03:59,255 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_23.jpg url DOWNLOADED http://4.bp.blogspot.com/-2OpVPa6WvdQ/VQjw_4XeS0I/AAAAAAAASOI/YQOy1s4SDCo/s0/1.png-------------
+2015-10-29 16:03:59,256 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_03.jpg url DOWNLOADED http://3.bp.blogspot.com/-3P1Vllxeka8/VhcAsDrws3I/AAAAAAADFwg/xv75WCQf55s/s0/1.jpg
+
+if(slides_page_url_path.length>0){
+type_server2
+}else{
+type_server1
+}
+
+if(type_server!1){
+slides_pageslides_page_url_path
+}else{
+slides_pageslides_page-------------
+2015-10-29 16:03:59,256 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_05.jpg url DOWNLOADED http://3.bp.blogspot.com/-4RS8PQyPgj8/VhcAibdf3tI/AAAAAAADFvo/x3UmhkPo98E/s0/1.jpg-------------
+2015-10-29 16:03:59,257 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_19.jpg url DOWNLOADED http://3.bp.blogspot.com/-xYkLBOGIDhc/VQjy5Ay6WuI/AAAAAAAASRI/l5zXuzE1L1g/s0/1.png-------------
+2015-10-29 16:03:59,257 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_04.jpg url DOWNLOADED http://3.bp.blogspot.com/-3YD1ZrvEzeA/VhcAn1uOrBI/AAAAAAADFwI/39OfbLXsAm4/s0/1.jpg-------------
+2015-10-29 16:03:59,257 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_20.jpg url DOWNLOADED http://3.bp.blogspot.com/-yWxaBz5cnaY/VQjx1HF6pbI/AAAAAAAASPY/YfNUAuQ7ISY/s0/1.png-------------
+2015-10-29 16:03:59,257 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_08.jpg url DOWNLOADED http://3.bp.blogspot.com/-9KHfXK3Vz-s/VhcAVZSrbyI/AAAAAAADFug/bBuvPZa1xBo/s0/1.jpg-------------
+2015-10-29 16:03:59,258 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_09.jpg url DOWNLOADED http://3.bp.blogspot.com/-9Wj_HKsbJj4/VhcAlBxsIII/AAAAAAADFv4/v0E2rAjc4qg/s0/1.jpg-------------
+2015-10-29 16:03:59,258 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_24.jpg url DOWNLOADED http://4.bp.blogspot.com/-9MT3xsbZ530/VQjxe-wa1EI/AAAAAAAASO4/z8gjXg4Evds/s0/1.png-------------
+2015-10-29 16:03:59,259 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_06.jpg url DOWNLOADED http://3.bp.blogspot.com/-67ETSpIjW3w/VhcAbwmdaiI/AAAAAAADFvI/SaKOkI3Kh8g/s0/1.jpg-------------
+2015-10-29 16:03:59,260 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_21.jpg url DOWNLOADED http://4.bp.blogspot.com/-_bBFoJ_xPSU/VQjx59LODyI/AAAAAAAASPg/UiUfZBTmdUE/s0/1.png-------------
+2015-10-29 16:03:59,260 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_25.jpg url DOWNLOADED http://4.bp.blogspot.com/-aODLhST_I_Y/VQjyRfoUbqI/AAAAAAAASQI/nj1qEtlE8jI/s0/1.png-------------
+2015-10-29 16:03:59,260 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_22.jpg url DOWNLOADED http://4.bp.blogspot.com/-04u8uVMp-b8/VQjy-9CuSHI/AAAAAAAASRQ/pvD7qqxYl3A/s0/1.png-------------
+2015-10-29 16:03:59,261 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_27.jpg url DOWNLOADED http://4.bp.blogspot.com/-KNcGZeTipuY/VQjzDsCrz1I/AAAAAAAASRY/2ZdC6Kyc4CE/s0/1.png-------------
+2015-10-29 16:03:59,261 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_07.jpg url DOWNLOADED http://3.bp.blogspot.com/-6YguQR1Oia0/VhcAZC_bfYI/AAAAAAADFu4/PW-azfVnt1w/s0/1.jpg-------------
+2015-10-29 16:03:59,261 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_26.jpg url DOWNLOADED http://4.bp.blogspot.com/-jhM6ynD029A/VQjxUi2L9oI/AAAAAAAASOo/HC7u8ykU0eo/s0/1.png-------------
+2015-10-29 16:03:59,262 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_31.jpg url DOWNLOADED http://4.bp.blogspot.com/-V6RoFgxclSE/VQjzIXaUb1I/AAAAAAAASRg/Pa15rVFne48/s0/1.png-------------
+2015-10-29 16:03:59,262 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_10.jpg url DOWNLOADED http://3.bp.blogspot.com/-fN6_31WiCx0/VhcAfHuZ2GI/AAAAAAADFvY/b23O8Yjb1uQ/s0/1.jpg-------------
+2015-10-29 16:03:59,262 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_28.jpg url DOWNLOADED http://4.bp.blogspot.com/-nZ7Sc4UKZw8/VQjxFW1UNGI/AAAAAAAASOQ/5JlPpYaFAp0/s0/1.png-------------
+2015-10-29 16:03:59,263 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_13.jpg url DOWNLOADED http://3.bp.blogspot.com/-fTlu0VjQ6qk/VhcARDMFV_I/AAAAAAADFuI/qwIZBg0zotQ/s0/1.jpg-------------
+2015-10-29 16:03:59,263 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_29.jpg url DOWNLOADED http://4.bp.blogspot.com/-tc24V8UnDKQ/VQjyINpV9XI/AAAAAAAASP4/KduwHOolLYo/s0/1.png-------------
+2015-10-29 16:03:59,263 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_30.jpg url DOWNLOADED http://4.bp.blogspot.com/-TpstqNSEvME/VQjyDNjFflI/AAAAAAAASPw/eNbDjn5vsY4/s0/1.png-------------
+2015-10-29 16:03:59,263 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_14.jpg url DOWNLOADED http://3.bp.blogspot.com/-h_se1VYZniM/VhcAqm7PeVI/AAAAAAADFwY/GBUil_4PfdQ/s0/1.jpg-------------
+2015-10-29 16:03:59,263 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_15.jpg url DOWNLOADED http://3.bp.blogspot.com/-iFAajA9i49I/VhcASl4mPnI/AAAAAAADFuQ/MupOAajh-GA/s0/1.jpg-------------
+2015-10-29 16:03:59,264 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_32.jpg url DOWNLOADED http://4.bp.blogspot.com/-ztMKTUmo9CY/VQjyhAgJZDI/AAAAAAAASQg/iCjp7y55fDg/s0/1.png-------------
+2015-10-29 16:03:59,264 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_11.jpg url DOWNLOADED http://3.bp.blogspot.com/-FoE56jMgOZI/VhcAdY8__yI/AAAAAAADFvQ/rVGDRWxZTCI/s0/1.jpg-------------
+2015-10-29 16:03:59,264 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_16.jpg url DOWNLOADED http://3.bp.blogspot.com/-iTqekBUiqAk/VhcAg-El24I/AAAAAAADFvg/W5XMxp0bn6w/s0/1.jpg-------------
+2015-10-29 16:03:59,264 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_12.jpg url DOWNLOADED http://3.bp.blogspot.com/-FQwaD6sOkDs/VhcApI9q-AI/AAAAAAADFwQ/e7wPV8Yk0Tg/s0/1.jpg-------------
+2015-10-29 16:03:59,265 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_02.jpg url DOWNLOADED http://3.bp.blogspot.com/-bu2hF6uoZCw/VhbE1TCaJrI/AAAAAAADEBc/FzR0UnFS7ZA/s0/1.jpg-------------
+2015-10-29 16:03:59,265 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_21.jpg url DOWNLOADED http://3.bp.blogspot.com/-Vf-erI3v0lA/VhcAPo8K6UI/AAAAAAADFuA/vAACr9QzCec/s0/1.jpg-------------
+2015-10-29 16:03:59,265 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_17.jpg url DOWNLOADED http://3.bp.blogspot.com/-n_rj46rYxdk/VhcAaZDxE0I/AAAAAAADFvA/lFNibrZTlOo/s0/1.jpg-------------
+2015-10-29 16:03:59,267 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_01.jpg url DOWNLOADED 
+
+
+http://3.bp.blogspot.com/-zJaH-3XEohU/VhbExbR7eyI/AAAAAAADEBM/hFRaIMbmxtY/s0/1.jpg-------------
+2015-10-29 16:03:59,268 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_03.jpg url DOWNLOADED http://3.bp.blogspot.com/-cLxyWtY_yYw/VhbFcHp6v9I/AAAAAAADEEE/3rKCCF1L1L4/s0/1.jpg-------------
+2015-10-29 16:03:59,268 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_04.jpg url DOWNLOADED http://3.bp.blogspot.com/-DukbCMjHgB0/VhbE3GZXRyI/AAAAAAADEBk/OeT2O5EchQw/s0/1.jpg-------------
+2015-10-29 16:03:59,268 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_22.jpg url DOWNLOADED http://3.bp.blogspot.com/-YYcJiOa_PjM/VhcAUNGy-XI/AAAAAAADFuY/AsSGO_IwJhQ/s0/1.jpg-------------
+2015-10-29 16:03:59,268 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_05.jpg url DOWNLOADED http://3.bp.blogspot.com/-EjUUFgtFspA/VhbFJ5q7dcI/AAAAAAADEC0/axlAZMLDAMA/s0/1.jpg-------------
+2015-10-29 16:03:59,268 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_23.jpg url DOWNLOADED http://3.bp.blogspot.com/-z9PtT08NBTI/VhcANjIju0I/AAAAAAADFt4/XuCfwq2J5A4/s0/1.jpg-------------
+2015-10-29 16:03:59,268 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_18.jpg url DOWNLOADED http://3.bp.blogspot.com/-njBoclCq5rM/VhcAX7nvNeI/AAAAAAADFuw/2d_dFAIO1Qk/s0/1.jpg-------------
+2015-10-29 16:03:59,269 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_19.jpg url DOWNLOADED http://3.bp.blogspot.com/-qwJScpd6a9Q/VhcAj5g5VYI/AAAAAAADFvw/o8CHzm2gLto/s0/1.jpg-------------
+2015-10-29 16:03:59,269 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_07.jpg url DOWNLOADED http://3.bp.blogspot.com/-fdB2goM0_LY/VhbFHiwCHpI/AAAAAAADECs/EwH8EYJdkYk/s0/1.jpg-------------
+2015-10-29 16:03:59,269 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_20.jpg url DOWNLOADED http://3.bp.blogspot.com/-U95PMo7N3-A/VhcAWkEzbXI/AAAAAAADFuo/dODD7TU0Rsg/s0/1.jpg-------------
+2015-10-29 16:03:59,269 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_08.jpg url DOWNLOADED http://3.bp.blogspot.com/-GdH64X3vRsQ/VhbE6zM7GQI/AAAAAAADEB0/zPtHEO4_E20/s0/1.jpg-------------
+2015-10-29 16:03:59,269 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_02.jpg url DOWNLOADED http://3.bp.blogspot.com/--07_YXzgU20/Vhay14_EZBI/AAAAAAADCk8/2bysm8BxZ_Q/s0/1.jpg-------------
+2015-10-29 16:03:59,269 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_01.jpg url DOWNLOADED 
+
+
+http://3.bp.blogspot.com/-KP_o9oFoY14/VhayKzhKNFI/AAAAAAADCic/xjrO8EvvkwU/s0/1.jpg-------------
+2015-10-29 16:03:59,270 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_04.jpg url DOWNLOADED http://3.bp.blogspot.com/-AgQCFAnrEK0/VhaylpS4TEI/AAAAAAADCj8/ircTySXQ9cw/s0/1.jpg-------------
+2015-10-29 16:03:59,270 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_09.jpg url DOWNLOADED http://3.bp.blogspot.com/-gOHZOtu_cOg/VhbFNJMqOjI/AAAAAAADEDE/GYrcz19Zzcw/s0/1.jpg-------------
+2015-10-29 16:03:59,270 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_03.jpg url DOWNLOADED http://3.bp.blogspot.com/-36Jd4UokYTw/VhayXBxBgZI/AAAAAAADCjE/dNeaeDjVjGk/s0/1.jpg-------------
+2015-10-29 16:03:59,270 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_06.jpg url DOWNLOADED http://3.bp.blogspot.com/-ew3Wvkitqq4/VhbFSceahMI/AAAAAAADEDc/oKWaX2WAJ_c/s0/1.jpg-------------
+2015-10-29 16:03:59,270 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_10.jpg url DOWNLOADED http://3.bp.blogspot.com/-i7D4Q3atv9s/VhbFYEOCxQI/AAAAAAADED0/LOqxlfr4u88/s0/1.jpg-------------
+2015-10-29 16:03:59,270 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_06.jpg url DOWNLOADED http://3.bp.blogspot.com/-cWyK_8DD6Co/Vhay-mpsZUI/AAAAAAADClc/4W0DFHtFxWs/s0/1.jpg-------------
+2015-10-29 16:03:59,271 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_13.jpg url DOWNLOADED http://3.bp.blogspot.com/-Lvrv-Z3vBEU/VhbFLXMqoyI/AAAAAAADEC8/nKwVDpYwnT0/s0/1.jpg-------------
+2015-10-29 16:03:59,271 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_05.jpg url DOWNLOADED http://3.bp.blogspot.com/-C1XGEOPz8xo/VhayY9E8YpI/AAAAAAADCjM/q8wwrjwUd7w/s0/1.jpg-------------
+2015-10-29 16:03:59,271 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_11.jpg url DOWNLOADED http://3.bp.blogspot.com/-JIfOA7oLHxY/VhbEzYtDH1I/AAAAAAADEBU/pwhtTAdtc4A/s0/1.jpg-------------
+2015-10-29 16:03:59,271 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_09.jpg url DOWNLOADED http://3.bp.blogspot.com/-eacirkeGXJI/VhaydhuJ5UI/AAAAAAADCjc/bGFyaVKtuUg/s0/1.jpg-------------
+2015-10-29 16:03:59,271 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_07.jpg url DOWNLOADED http://3.bp.blogspot.com/-D4MLANq8v78/VhayP5panNI/AAAAAAADCis/ztOv82BNSq8/s0/1.jpg-------------
+2015-10-29 16:03:59,271 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_14.jpg url DOWNLOADED http://3.bp.blogspot.com/-n6hILpbFx50/VhbFAVxMEcI/AAAAAAADECM/i_DoKW8iWcc/s0/1.jpg-------------
+2015-10-29 16:03:59,272 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_08.jpg url DOWNLOADED http://3.bp.blogspot.com/-DF3WxWByVww/VhazAdlhaJI/AAAAAAADClk/PO_t70cLaFA/s0/1.jpg
+
+if(slides_page_url_path.length>0){
+type_server2
+}else{
+type_server1
+}
+
+if(type_server!1){
+slides_pageslides_page_url_path
+}else{
+slides_pageslides_page-------------
+2015-10-29 16:03:59,272 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_12.jpg url DOWNLOADED http://3.bp.blogspot.com/-L1-VaZN4NZo/VhbFUKBdueI/AAAAAAADEDk/sT7d0NQQe5w/s0/1.jpg-------------
+2015-10-29 16:03:59,272 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_11.jpg url DOWNLOADED http://3.bp.blogspot.com/-felvS5sJhuw/VhaynXw1lDI/AAAAAAADCkE/jVCrdPnzaq4/s0/1.jpg-------------
+2015-10-29 16:03:59,272 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_15.jpg url DOWNLOADED http://3.bp.blogspot.com/-oiZAwM8SBFM/VhbFFxdWXMI/AAAAAAADECk/efyPL4QsGI4/s0/1.jpg-------------
+2015-10-29 16:03:59,273 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_10.jpg url DOWNLOADED http://3.bp.blogspot.com/-Ew7sKBWAjpg/Vhayf3ijRAI/AAAAAAADCjk/0zNE9vDhx6o/s0/1.jpg-------------
+2015-10-29 16:03:59,273 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_16.jpg url DOWNLOADED http://3.bp.blogspot.com/-qPf9R_eMPxs/VhbFO4bZS5I/AAAAAAADEDM/MmIxKvgYwxU/s0/1.jpg-------------
+2015-10-29 16:03:59,273 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_19.jpg url DOWNLOADED http://3.bp.blogspot.com/-TvL_W9qSu8c/VhbE898Z3nI/AAAAAAADEB8/XgC6_qIf6tI/s0/1.jpg-------------
+2015-10-29 16:03:59,273 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_17.jpg url DOWNLOADED http://3.bp.blogspot.com/-T7njYOrulRU/VhbE4-mKBmI/AAAAAAADEBs/VoyVGdubQKE/s0/1.jpg-------------
+2015-10-29 16:03:59,273 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_13.jpg url DOWNLOADED http://3.bp.blogspot.com/-gNQjAW7hWXo/Vhay8Akd_mI/AAAAAAADClU/nj-Odcl7VkY/s0/1.jpg-------------
+2015-10-29 16:03:59,273 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_18.jpg url DOWNLOADED http://3.bp.blogspot.com/-TkJoK095-EU/VhbFaHKxmZI/AAAAAAADED8/yp1MiALlTJg/s0/1.jpg-------------
+2015-10-29 16:03:59,274 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_20.jpg url DOWNLOADED http://3.bp.blogspot.com/-V9Q_2ho0FPc/VhbFCcIsNuI/AAAAAAADECU/zZA6cpBhb5M/s0/1.jpg-------------
+2015-10-29 16:03:59,893 [6] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-Vcl9Zo-KVEU/VhbFD1z67zI/AAAAAAADECc/kPofxR19gMo/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter5_21.jpg
+2015-10-29 16:04:00,133 [7] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-fiYzH_lA0BU/VhayzXjFeXI/AAAAAAADCk0/QF8k4AKfYJQ/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter6_12.jpg
+2015-10-29 16:04:00,160 [8] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-H0HwhahI378/VhayxRY2UsI/AAAAAAADCks/Z1v9GTaS58k/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter6_14.jpg
+2015-10-29 16:04:00,230 [6] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-vUHTK_MJ-bY/VhbFWEIbnfI/AAAAAAADEDs/xRzPle_PIiI/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter5_22.jpg
+2015-10-29 16:04:00,355 [5] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-zDKrib5EVBU/VhbFQ0ebw4I/AAAAAAADEDU/kCITDsvxpq0/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter5_25.jpg
+2015-10-29 16:04:00,616 [7] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-in4gyG9t5NU/VhaysouB8nI/AAAAAAADCkc/tDgHVhIXaQQ/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter6_15.jpg
+2015-10-29 16:04:00,661 [9] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-KUrNsFiMPCI/VhaypCQM9qI/AAAAAAADCkM/JwcWoxZ1b2k/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter6_17.jpg
+2015-10-29 16:04:00,755 [8] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-x6lkbJ0IWGg/VhbFev5ldeI/AAAAAAADEEM/w6HNaZi0Jd4/s0/1.jpg
+
+if(slides_page_url_path.length>0){
+type_server2
+}else{
+type_server1
+}
+
+if(type_server!1){
+slides_pageslides_page_url_path
+}else{
+slides_pageslides_page ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter5_23.jpg
+2015-10-29 16:04:01,255 [5] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-jN-Am0BtOGQ/VhayjnGaIfI/AAAAAAADCj0/1cC_6XCAJSk/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter6_16.jpg
+2015-10-29 16:04:01,268 [7] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-YgM8QmrwGNA/VhbE-jQYU6I/AAAAAAADECE/Z2vyJT5TLFQ/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter5_24.jpg
+2015-10-29 16:04:01,313 [8] INFO MangaDownloadConsole.Utilities - Downloaded 
+
+
+http://3.bp.blogspot.com/-MYYK7oqz2m4/ViNhrRT3G-I/AAAAAAABMws/A3Ktf6VcWhQ/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter7_01.jpg
+2015-10-29 16:04:01,683 [9] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-n3i5PDCxMGQ/VhayUrsVgBI/AAAAAAADCi8/WJ0DuIpE0A0/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter6_18.jpg
+2015-10-29 16:04:02,064 [5] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-pFU3bsyhF2s/Vhayhx-VnpI/AAAAAAADCjs/0ad4PotMzRU/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter6_19.jpg
+2015-10-29 16:04:02,150 [8] INFO MangaDownloadConsole.Utilities - Downloaded http://1.bp.blogspot.com/-dg5CWtX8zdQ/ViNkSUjfSAI/AAAAAAABMzc/vRxvMqhJJ4o/s0/1445129931-DBA03PG21-copy.png ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter7_03.jpg
+2015-10-29 16:04:02,594 [7] INFO MangaDownloadConsole.Utilities - Downloaded http://1.bp.blogspot.com/-B0EHsU8YkvU/ViNiJf0WpCI/AAAAAAABMxE/uEMMP64yrvE/s0/1445129909-DBA03PG00_Front_Cover.png ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter7_02.jpg
+2015-10-29 16:04:36,887 [1] INFO MangaDownloadConsole.Utilities - Hello user,USAGE :
+2015-10-29 16:04:36,894 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="(Manga_link Manga_link)" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]
+2015-10-29 16:04:36,894 [1] INFO MangaDownloadConsole.Utilities - when () means require,[] means options.Example:
+2015-10-29 16:04:36,894 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" -path=D:\Manga\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20OR -add="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" to update or add to database
+2015-10-29 16:05:32,541 [1] INFO MangaDownloadConsole.Utilities - Hello user,USAGE :
+2015-10-29 16:05:32,548 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="(Manga_link Manga_link)" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]
+2015-10-29 16:05:32,549 [1] INFO MangaDownloadConsole.Utilities - when () means require,[] means options.Example:
+2015-10-29 16:05:32,549 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" -path=D:\Manga\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20OR -add="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" to update or add to database
+2015-10-29 16:05:32,818 [1] INFO MangaDownloadConsole.Utilities - The remote server returned an error: (404) Not Found.
+2015-10-29 16:05:32,899 [1] INFO MangaDownloadConsole.Utilities - insert [MangaLink Id=3, MangaName=http://manga24h.com/1648/Puppy-Lovers.html, NumberOfChapter=0, IsActive=True] in db
+2015-10-29 16:05:33,055 [1] INFO MangaDownloadConsole.Utilities - insert [MangaLink Id=4, MangaName=http://manga24h.com/3621/A-bout.html, NumberOfChapter=0, IsActive=True] in db
+2015-10-29 16:05:33,055 [1] INFO MangaDownloadConsole.Utilities - Time elapsed: 00:00:00.5027622
+2015-10-29 16:07:04,236 [1] INFO MangaDownloadConsole.Utilities - Hello user,USAGE :
+2015-10-29 16:07:04,244 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="(Manga_link Manga_link)" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]
+2015-10-29 16:07:04,244 [1] INFO MangaDownloadConsole.Utilities - when () means require,[] means options.Example:
+2015-10-29 16:07:04,244 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" -path=D:\Manga\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20OR -add="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" to update or add to database
+2015-10-29 16:07:04,428 [1] INFO MangaDownloadConsole.Utilities - insert [MangaLink Id=5, MangaName=http://truyentranhtuan.com/tay-du-ki-bua/, NumberOfChapter=17, IsActive=True] in db
+2015-10-29 16:07:04,502 [1] INFO MangaDownloadConsole.Utilities - insert [MangaLink Id=6, MangaName=http://truyentranhtuan.com/tail-star/, NumberOfChapter=8, IsActive=True] in db
+2015-10-29 16:07:04,502 [1] INFO MangaDownloadConsole.Utilities - Time elapsed: 00:00:00.2538934
+2015-10-29 16:07:47,100 [1] INFO MangaDownloadConsole.Utilities - Hello user,USAGE :
+2015-10-29 16:07:47,109 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="(Manga_link Manga_link)" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]
+2015-10-29 16:07:47,109 [1] INFO MangaDownloadConsole.Utilities - when () means require,[] means options.Example:
+2015-10-29 16:07:47,109 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" -path=D:\Manga\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20OR -add="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" to update or add to database
+2015-10-29 16:07:47,111 [1] INFO MangaDownloadConsole.Utilities - link not defined,will get from db!
+2015-10-29 16:07:47,186 [1] INFO MangaDownloadConsole.Utilities - 
+
+we will get manga from link : http://truyentranhtuan.com/dragon-ball-after/ 
+Save path : D:\Manga\
+Chapter per vol :20
+Make pdf : true
+2015-10-29 16:07:47,187 [1] INFO MangaDownloadConsole.Utilities - Sleep 5s before process,please check params
+2015-10-29 16:07:52,187 [1] INFO MangaDownloadConsole.Utilities - Manga name : dragon-ball-after
+2015-10-29 16:07:52,318 [1] INFO MangaDownloadConsole.Utilities - Found 7 chapters
+2015-10-29 16:07:52,387 [1] INFO MangaDownloadConsole.Utilities - Chapter 1 has 24 image links
+2015-10-29 16:07:52,444 [1] INFO MangaDownloadConsole.Utilities - Chapter 2 has 24 image links
+2015-10-29 16:07:52,494 [1] INFO MangaDownloadConsole.Utilities - Chapter 3 has 32 image links
+2015-10-29 16:07:52,544 [1] INFO MangaDownloadConsole.Utilities - Chapter 4 has 23 image links
+2015-10-29 16:07:52,561 [1] INFO MangaDownloadConsole.Utilities - Chapter 5 has 25 image links
+2015-10-29 16:07:52,580 [1] INFO MangaDownloadConsole.Utilities - Chapter 6 has 26 image links
+2015-10-29 16:07:52,597 [1] INFO MangaDownloadConsole.Utilities - Chapter 7 has 25 image links
+2015-10-29 16:07:52,597 [1] INFO MangaDownloadConsole.Utilities - Volume 1 has 7 chapter links
+2015-10-29 16:07:52,634 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_01.jpg url DOWNLOADED 
+
+
+http://i.imgur.com/TCWWuUF.jpg-------------
+2015-10-29 16:07:52,635 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_02.jpg url DOWNLOADED http://i.imgur.com/1rnRT0A.jpg-------------
+2015-10-29 16:07:52,635 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_01.jpg url DOWNLOADED 
+
+
+http://i.imgur.com/eR5pcWk.png-------------
+2015-10-29 16:07:52,635 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_04.jpg url DOWNLOADED http://i.imgur.com/5nQo8Fz.jpg-------------
+2015-10-29 16:07:52,635 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_03.jpg url DOWNLOADED http://i.imgur.com/28VH5cy.png-------------
+2015-10-29 16:07:52,636 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_02.jpg url DOWNLOADED http://i.imgur.com/0c35dCO.png-------------
+2015-10-29 16:07:52,636 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_04.jpg url DOWNLOADED http://i.imgur.com/2d1SJE7.png-------------
+2015-10-29 16:07:52,636 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_06.jpg url DOWNLOADED http://i.imgur.com/42fW9sO.png-------------
+2015-10-29 16:07:52,636 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_05.jpg url DOWNLOADED http://i.imgur.com/3l6uizr.png-------------
+2015-10-29 16:07:52,637 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_03.jpg url DOWNLOADED http://i.imgur.com/3DAviri.jpg-------------
+2015-10-29 16:07:52,637 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_08.jpg url DOWNLOADED http://i.imgur.com/B5f23dz.png-------------
+2015-10-29 16:07:52,637 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_05.jpg url DOWNLOADED http://i.imgur.com/7jc9H1x.jpg-------------
+2015-10-29 16:07:52,638 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_09.jpg url DOWNLOADED http://i.imgur.com/ESOtwgJ.png-------------
+2015-10-29 16:07:52,638 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_06.jpg url DOWNLOADED http://i.imgur.com/BuBIFuG.jpg-------------
+2015-10-29 16:07:52,639 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_10.jpg url DOWNLOADED http://i.imgur.com/FkXpSX7.png-------------
+2015-10-29 16:07:52,639 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_07.jpg url DOWNLOADED http://i.imgur.com/7hI1uIW.png
+
+if(slides_page_url_path.length>0){
+type_server2
+}else{
+type_server1
+}
+
+if(type_server!1){
+slides_pageslides_page_url_path
+}else{
+slides_pageslides_page-------------
+2015-10-29 16:07:52,639 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_13.jpg url DOWNLOADED http://i.imgur.com/LxhD38Y.png-------------
+2015-10-29 16:07:52,639 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_09.jpg url DOWNLOADED http://i.imgur.com/EZZEVNA.jpg-------------
+2015-10-29 16:07:52,640 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_11.jpg url DOWNLOADED http://i.imgur.com/J4LziW2.png-------------
+2015-10-29 16:07:52,640 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_14.jpg url DOWNLOADED http://i.imgur.com/oDNdcDs.png-------------
+2015-10-29 16:07:52,640 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_10.jpg url DOWNLOADED http://i.imgur.com/glfZcyG.jpg-------------
+2015-10-29 16:07:52,641 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_07.jpg url DOWNLOADED http://i.imgur.com/cEn4Vtv.jpg-------------
+2015-10-29 16:07:52,641 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_12.jpg url DOWNLOADED http://i.imgur.com/Ll7A35r.png-------------
+2015-10-29 16:07:52,641 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_17.jpg url DOWNLOADED http://i.imgur.com/sya5GSe.png-------------
+2015-10-29 16:07:52,642 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_08.jpg url DOWNLOADED http://i.imgur.com/CfUe5Wi.jpg-------------
+2015-10-29 16:07:52,642 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_18.jpg url DOWNLOADED http://i.imgur.com/t7chWXt.png-------------
+2015-10-29 16:07:52,643 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_13.jpg url DOWNLOADED http://i.imgur.com/j0Y26lN.jpg-------------
+2015-10-29 16:07:52,643 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_11.jpg url DOWNLOADED http://i.imgur.com/Gze4btF.jpg-------------
+2015-10-29 16:07:52,643 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_19.jpg url DOWNLOADED http://i.imgur.com/UgEpBXZ.png-------------
+2015-10-29 16:07:52,643 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_15.jpg url DOWNLOADED http://i.imgur.com/PQxcy7U.png-------------
+2015-10-29 16:07:52,644 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_14.jpg url DOWNLOADED http://i.imgur.com/jTeAc1b.jpg-------------
+2015-10-29 16:07:52,644 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_16.jpg url DOWNLOADED http://i.imgur.com/SNIMLZc.png-------------
+2015-10-29 16:07:52,644 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_12.jpg url DOWNLOADED http://i.imgur.com/IEIdDMV.jpg-------------
+2015-10-29 16:07:52,644 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_15.jpg url DOWNLOADED http://i.imgur.com/KGtiguL.jpg-------------
+2015-10-29 16:07:52,645 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_23.jpg url DOWNLOADED http://i.imgur.com/YEESfVT.png-------------
+2015-10-29 16:07:52,645 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_16.jpg url DOWNLOADED http://i.imgur.com/lyNM8eF.jpg-------------
+2015-10-29 16:07:52,645 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_24.jpg url DOWNLOADED http://i.imgur.com/z1FbeYh.png-------------
+2015-10-29 16:07:52,645 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_19.jpg url DOWNLOADED http://i.imgur.com/r1JsiGt.jpg-------------
+2015-10-29 16:07:52,645 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_20.jpg url DOWNLOADED http://i.imgur.com/sM6T6Oy.jpg-------------
+2015-10-29 16:07:52,646 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_17.jpg url DOWNLOADED http://i.imgur.com/m9sbQAV.jpg
+
+if(slides_page_url_path.length>0){
+type_server2
+}else{
+type_server1
+}
+
+if(type_server!1){
+slides_pageslides_page_url_path
+}else{
+slides_pageslides_page-------------
+2015-10-29 16:07:52,646 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_21.jpg url DOWNLOADED http://i.imgur.com/UNfKT3R.jpg-------------
+2015-10-29 16:07:52,647 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_22.jpg url DOWNLOADED http://i.imgur.com/V0eUmU3.jpg-------------
+2015-10-29 16:07:52,647 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_23.jpg url DOWNLOADED http://i.imgur.com/v6jZv7n.jpg-------------
+2015-10-29 16:07:52,647 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_24.jpg url DOWNLOADED http://i.imgur.com/Vfc8AIQ.jpg-------------
+2015-10-29 16:07:52,647 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter1_18.jpg url DOWNLOADED http://i.imgur.com/nGU33Ig.jpg-------------
+2015-10-29 16:07:52,648 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_20.jpg url DOWNLOADED http://i.imgur.com/uP5aPKW.png-------------
+2015-10-29 16:07:52,648 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_01.jpg url DOWNLOADED 
+
+
+http://2.bp.blogspot.com/-980IqRIcc04/VQjwvQMetcI/AAAAAAAASNw/nx8iE5MDMkw/s0/1.jpg-------------
+2015-10-29 16:07:52,649 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_03.jpg url DOWNLOADED http://1.bp.blogspot.com/-hUZfQ3FjsnY/VQjyz9UlB2I/AAAAAAAASRA/wPyqs64avlk/s0/1.png-------------
+2015-10-29 16:07:52,649 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_04.jpg url DOWNLOADED http://1.bp.blogspot.com/-I_ghCNqMCJQ/VQjyclVKTQI/AAAAAAAASQY/MjmFqPpxEjQ/s0/1.png-------------
+2015-10-29 16:07:52,650 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_05.jpg url DOWNLOADED http://1.bp.blogspot.com/-iGDB6uXepPY/VQjxq6IdQbI/AAAAAAAASPI/cNtv1o_zBOs/s0/1.png-------------
+2015-10-29 16:07:52,650 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_21.jpg url DOWNLOADED http://i.imgur.com/wFan8wq.png-------------
+2015-10-29 16:07:52,650 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_02.jpg url DOWNLOADED http://1.bp.blogspot.com/-f3s2TKbjb9Y/VQjxZRuDQ-I/AAAAAAAASOw/G2IsFpcMwYY/s0/1.png-------------
+2015-10-29 16:07:52,651 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_07.jpg url DOWNLOADED http://1.bp.blogspot.com/-tR3IW97xMhc/VQjxl70tpZI/AAAAAAAASPA/ZnE1C8LXxqQ/s0/1.png-------------
+2015-10-29 16:07:52,651 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_06.jpg url DOWNLOADED http://1.bp.blogspot.com/-lGbUOKIS_ks/VQjxPzPpdzI/AAAAAAAASOg/q2hZQgM8Yo8/s0/1.png-------------
+2015-10-29 16:07:52,652 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_09.jpg url DOWNLOADED http://1.bp.blogspot.com/-wuC0pEnC3K4/VQjzMeR_vtI/AAAAAAAASRo/N768kZCpklc/s0/1.png
+
+if(slides_page_url_path.length>0){
+type_server2
+}else{
+type_server1
+}
+
+if(type_server!1){
+slides_pageslides_page_url_path
+}else{
+slides_pageslides_page-------------
+2015-10-29 16:07:52,652 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_08.jpg url DOWNLOADED http://1.bp.blogspot.com/-UeuphoPTeBE/VQjw5qyGn-I/AAAAAAAASOA/PbmVEr0MUbo/s0/1.png-------------
+2015-10-29 16:07:52,652 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_10.jpg url DOWNLOADED http://1.bp.blogspot.com/-xXKFhNiebvQ/VQjyrsguQvI/AAAAAAAASQw/htcDPzs7u0U/s0/1.png-------------
+2015-10-29 16:07:52,653 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter2_22.jpg url DOWNLOADED http://i.imgur.com/Wkezyf7.png-------------
+2015-10-29 16:07:52,653 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_11.jpg url DOWNLOADED http://2.bp.blogspot.com/-akl3UxHlPAg/VQjxKtrJMOI/AAAAAAAASOY/1nNQ6hY8ISc/s0/1.png-------------
+2015-10-29 16:07:52,653 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_01.jpg url DOWNLOADED 
+
+
+http://3.bp.blogspot.com/-hoXgtAs3XaA/VhcAMUuWlAI/AAAAAAADFtw/VnQ3CKGUxfM/s0/1.jpg-------------
+2015-10-29 16:07:52,653 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_13.jpg url DOWNLOADED http://3.bp.blogspot.com/-_gjALy4ViWo/VQjylhS0qZI/AAAAAAAASQo/7nQOAZFn7dk/s0/1.png-------------
+2015-10-29 16:07:52,655 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_14.jpg url DOWNLOADED http://3.bp.blogspot.com/-9SWrn_rYJ2U/VQjyvvwgNWI/AAAAAAAASQ4/2V4QRQkNqnU/s0/1.png-------------
+2015-10-29 16:07:52,655 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_15.jpg url DOWNLOADED http://3.bp.blogspot.com/-eGwPjxnXRaE/VQjw0oRUVHI/AAAAAAAASN4/7gI-gaERiWE/s0/1.png-------------
+2015-10-29 16:07:52,655 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_03.jpg url DOWNLOADED http://3.bp.blogspot.com/-3P1Vllxeka8/VhcAsDrws3I/AAAAAAADFwg/xv75WCQf55s/s0/1.jpg
+
+if(slides_page_url_path.length>0){
+type_server2
+}else{
+type_server1
+}
+
+if(type_server!1){
+slides_pageslides_page_url_path
+}else{
+slides_pageslides_page-------------
+2015-10-29 16:07:52,656 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_16.jpg url DOWNLOADED http://3.bp.blogspot.com/-mgvFjYHunkE/VQjx-pDMDGI/AAAAAAAASPo/2la4ZSiKjU8/s0/1.png-------------
+2015-10-29 16:07:52,656 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_02.jpg url DOWNLOADED http://3.bp.blogspot.com/-1SL4rV9DkAo/VhcAmpVr98I/AAAAAAADFwA/KQ9bQ3zOKEU/s0/1.jpg-------------
+2015-10-29 16:07:52,656 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_05.jpg url DOWNLOADED http://3.bp.blogspot.com/-4RS8PQyPgj8/VhcAibdf3tI/AAAAAAADFvo/x3UmhkPo98E/s0/1.jpg-------------
+2015-10-29 16:07:52,657 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_04.jpg url DOWNLOADED http://3.bp.blogspot.com/-3YD1ZrvEzeA/VhcAn1uOrBI/AAAAAAADFwI/39OfbLXsAm4/s0/1.jpg-------------
+2015-10-29 16:07:52,657 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_06.jpg url DOWNLOADED http://3.bp.blogspot.com/-67ETSpIjW3w/VhcAbwmdaiI/AAAAAAADFvI/SaKOkI3Kh8g/s0/1.jpg-------------
+2015-10-29 16:07:52,657 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_17.jpg url DOWNLOADED http://3.bp.blogspot.com/-oJugys6SWcI/VQjxwM4avQI/AAAAAAAASPQ/y8d-x2enDDM/s0/1.png-------------
+2015-10-29 16:07:52,659 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_12.jpg url DOWNLOADED http://2.bp.blogspot.com/-E7f2tl_GTyI/VQjyM0CEoVI/AAAAAAAASQA/cK0BlEWKU_Q/s0/1.png-------------
+2015-10-29 16:07:52,659 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_09.jpg url DOWNLOADED http://3.bp.blogspot.com/-9Wj_HKsbJj4/VhcAlBxsIII/AAAAAAADFv4/v0E2rAjc4qg/s0/1.jpg-------------
+2015-10-29 16:07:52,659 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_18.jpg url DOWNLOADED http://3.bp.blogspot.com/-PS7V21Qm0fE/VQjyYBbWgDI/AAAAAAAASQQ/4g2Ye3zqTZw/s0/1.png-------------
+2015-10-29 16:07:52,659 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_07.jpg url DOWNLOADED http://3.bp.blogspot.com/-6YguQR1Oia0/VhcAZC_bfYI/AAAAAAADFu4/PW-azfVnt1w/s0/1.jpg-------------
+2015-10-29 16:07:52,660 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_10.jpg url DOWNLOADED http://3.bp.blogspot.com/-fN6_31WiCx0/VhcAfHuZ2GI/AAAAAAADFvY/b23O8Yjb1uQ/s0/1.jpg-------------
+2015-10-29 16:07:52,660 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_21.jpg url DOWNLOADED http://4.bp.blogspot.com/-_bBFoJ_xPSU/VQjx59LODyI/AAAAAAAASPg/UiUfZBTmdUE/s0/1.png-------------
+2015-10-29 16:07:52,661 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_22.jpg url DOWNLOADED http://4.bp.blogspot.com/-04u8uVMp-b8/VQjy-9CuSHI/AAAAAAAASRQ/pvD7qqxYl3A/s0/1.png-------------
+2015-10-29 16:07:52,661 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_08.jpg url DOWNLOADED http://3.bp.blogspot.com/-9KHfXK3Vz-s/VhcAVZSrbyI/AAAAAAADFug/bBuvPZa1xBo/s0/1.jpg-------------
+2015-10-29 16:07:52,661 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_11.jpg url DOWNLOADED http://3.bp.blogspot.com/-FoE56jMgOZI/VhcAdY8__yI/AAAAAAADFvQ/rVGDRWxZTCI/s0/1.jpg-------------
+2015-10-29 16:07:52,662 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_19.jpg url DOWNLOADED http://3.bp.blogspot.com/-xYkLBOGIDhc/VQjy5Ay6WuI/AAAAAAAASRI/l5zXuzE1L1g/s0/1.png-------------
+2015-10-29 16:07:52,662 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_23.jpg url DOWNLOADED http://4.bp.blogspot.com/-2OpVPa6WvdQ/VQjw_4XeS0I/AAAAAAAASOI/YQOy1s4SDCo/s0/1.png-------------
+2015-10-29 16:07:52,662 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_13.jpg url DOWNLOADED http://3.bp.blogspot.com/-fTlu0VjQ6qk/VhcARDMFV_I/AAAAAAADFuI/qwIZBg0zotQ/s0/1.jpg-------------
+2015-10-29 16:07:52,662 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_20.jpg url DOWNLOADED http://3.bp.blogspot.com/-yWxaBz5cnaY/VQjx1HF6pbI/AAAAAAAASPY/YfNUAuQ7ISY/s0/1.png-------------
+2015-10-29 16:07:52,663 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_12.jpg url DOWNLOADED http://3.bp.blogspot.com/-FQwaD6sOkDs/VhcApI9q-AI/AAAAAAADFwQ/e7wPV8Yk0Tg/s0/1.jpg-------------
+2015-10-29 16:07:52,663 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_25.jpg url DOWNLOADED http://4.bp.blogspot.com/-aODLhST_I_Y/VQjyRfoUbqI/AAAAAAAASQI/nj1qEtlE8jI/s0/1.png-------------
+2015-10-29 16:07:52,663 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_14.jpg url DOWNLOADED http://3.bp.blogspot.com/-h_se1VYZniM/VhcAqm7PeVI/AAAAAAADFwY/GBUil_4PfdQ/s0/1.jpg-------------
+2015-10-29 16:07:52,664 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_15.jpg url DOWNLOADED http://3.bp.blogspot.com/-iFAajA9i49I/VhcASl4mPnI/AAAAAAADFuQ/MupOAajh-GA/s0/1.jpg-------------
+2015-10-29 16:07:52,664 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_17.jpg url DOWNLOADED http://3.bp.blogspot.com/-n_rj46rYxdk/VhcAaZDxE0I/AAAAAAADFvA/lFNibrZTlOo/s0/1.jpg-------------
+2015-10-29 16:07:52,664 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_24.jpg url DOWNLOADED http://4.bp.blogspot.com/-9MT3xsbZ530/VQjxe-wa1EI/AAAAAAAASO4/z8gjXg4Evds/s0/1.png-------------
+2015-10-29 16:07:52,664 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_16.jpg url DOWNLOADED http://3.bp.blogspot.com/-iTqekBUiqAk/VhcAg-El24I/AAAAAAADFvg/W5XMxp0bn6w/s0/1.jpg-------------
+2015-10-29 16:07:52,665 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_27.jpg url DOWNLOADED http://4.bp.blogspot.com/-KNcGZeTipuY/VQjzDsCrz1I/AAAAAAAASRY/2ZdC6Kyc4CE/s0/1.png-------------
+2015-10-29 16:07:52,665 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_19.jpg url DOWNLOADED http://3.bp.blogspot.com/-qwJScpd6a9Q/VhcAj5g5VYI/AAAAAAADFvw/o8CHzm2gLto/s0/1.jpg-------------
+2015-10-29 16:07:52,665 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_18.jpg url DOWNLOADED http://3.bp.blogspot.com/-njBoclCq5rM/VhcAX7nvNeI/AAAAAAADFuw/2d_dFAIO1Qk/s0/1.jpg-------------
+2015-10-29 16:07:52,665 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_20.jpg url DOWNLOADED http://3.bp.blogspot.com/-U95PMo7N3-A/VhcAWkEzbXI/AAAAAAADFuo/dODD7TU0Rsg/s0/1.jpg-------------
+2015-10-29 16:07:52,665 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_23.jpg url DOWNLOADED http://3.bp.blogspot.com/-z9PtT08NBTI/VhcANjIju0I/AAAAAAADFt4/XuCfwq2J5A4/s0/1.jpg-------------
+2015-10-29 16:07:52,665 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_26.jpg url DOWNLOADED http://4.bp.blogspot.com/-jhM6ynD029A/VQjxUi2L9oI/AAAAAAAASOo/HC7u8ykU0eo/s0/1.png-------------
+2015-10-29 16:07:52,666 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_31.jpg url DOWNLOADED http://4.bp.blogspot.com/-V6RoFgxclSE/VQjzIXaUb1I/AAAAAAAASRg/Pa15rVFne48/s0/1.png-------------
+2015-10-29 16:07:52,666 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_21.jpg url DOWNLOADED http://3.bp.blogspot.com/-Vf-erI3v0lA/VhcAPo8K6UI/AAAAAAADFuA/vAACr9QzCec/s0/1.jpg-------------
+2015-10-29 16:07:52,666 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_28.jpg url DOWNLOADED http://4.bp.blogspot.com/-nZ7Sc4UKZw8/VQjxFW1UNGI/AAAAAAAASOQ/5JlPpYaFAp0/s0/1.png-------------
+2015-10-29 16:07:52,666 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter4_22.jpg url DOWNLOADED http://3.bp.blogspot.com/-YYcJiOa_PjM/VhcAUNGy-XI/AAAAAAADFuY/AsSGO_IwJhQ/s0/1.jpg-------------
+2015-10-29 16:07:52,666 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_29.jpg url DOWNLOADED http://4.bp.blogspot.com/-tc24V8UnDKQ/VQjyINpV9XI/AAAAAAAASP4/KduwHOolLYo/s0/1.png-------------
+2015-10-29 16:07:52,666 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_01.jpg url DOWNLOADED 
+
+
+http://3.bp.blogspot.com/-zJaH-3XEohU/VhbExbR7eyI/AAAAAAADEBM/hFRaIMbmxtY/s0/1.jpg-------------
+2015-10-29 16:07:52,667 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_30.jpg url DOWNLOADED http://4.bp.blogspot.com/-TpstqNSEvME/VQjyDNjFflI/AAAAAAAASPw/eNbDjn5vsY4/s0/1.png-------------
+2015-10-29 16:07:52,667 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_03.jpg url DOWNLOADED http://3.bp.blogspot.com/-cLxyWtY_yYw/VhbFcHp6v9I/AAAAAAADEEE/3rKCCF1L1L4/s0/1.jpg-------------
+2015-10-29 16:07:52,667 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter3_32.jpg url DOWNLOADED http://4.bp.blogspot.com/-ztMKTUmo9CY/VQjyhAgJZDI/AAAAAAAASQg/iCjp7y55fDg/s0/1.png-------------
+2015-10-29 16:07:52,667 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_04.jpg url DOWNLOADED http://3.bp.blogspot.com/-DukbCMjHgB0/VhbE3GZXRyI/AAAAAAADEBk/OeT2O5EchQw/s0/1.jpg-------------
+2015-10-29 16:07:52,667 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_01.jpg url DOWNLOADED 
+
+
+http://3.bp.blogspot.com/-KP_o9oFoY14/VhayKzhKNFI/AAAAAAADCic/xjrO8EvvkwU/s0/1.jpg-------------
+2015-10-29 16:07:52,667 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_05.jpg url DOWNLOADED http://3.bp.blogspot.com/-EjUUFgtFspA/VhbFJ5q7dcI/AAAAAAADEC0/axlAZMLDAMA/s0/1.jpg-------------
+2015-10-29 16:07:52,668 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_03.jpg url DOWNLOADED http://3.bp.blogspot.com/-36Jd4UokYTw/VhayXBxBgZI/AAAAAAADCjE/dNeaeDjVjGk/s0/1.jpg-------------
+2015-10-29 16:07:52,668 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_06.jpg url DOWNLOADED http://3.bp.blogspot.com/-ew3Wvkitqq4/VhbFSceahMI/AAAAAAADEDc/oKWaX2WAJ_c/s0/1.jpg-------------
+2015-10-29 16:07:52,668 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_04.jpg url DOWNLOADED http://3.bp.blogspot.com/-AgQCFAnrEK0/VhaylpS4TEI/AAAAAAADCj8/ircTySXQ9cw/s0/1.jpg-------------
+2015-10-29 16:07:52,668 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_07.jpg url DOWNLOADED http://3.bp.blogspot.com/-fdB2goM0_LY/VhbFHiwCHpI/AAAAAAADECs/EwH8EYJdkYk/s0/1.jpg-------------
+2015-10-29 16:07:52,668 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_02.jpg url DOWNLOADED http://3.bp.blogspot.com/-bu2hF6uoZCw/VhbE1TCaJrI/AAAAAAADEBc/FzR0UnFS7ZA/s0/1.jpg-------------
+2015-10-29 16:07:52,668 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_08.jpg url DOWNLOADED http://3.bp.blogspot.com/-GdH64X3vRsQ/VhbE6zM7GQI/AAAAAAADEB0/zPtHEO4_E20/s0/1.jpg-------------
+2015-10-29 16:07:52,668 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_02.jpg url DOWNLOADED http://3.bp.blogspot.com/--07_YXzgU20/Vhay14_EZBI/AAAAAAADCk8/2bysm8BxZ_Q/s0/1.jpg-------------
+2015-10-29 16:07:52,670 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_10.jpg url DOWNLOADED http://3.bp.blogspot.com/-i7D4Q3atv9s/VhbFYEOCxQI/AAAAAAADED0/LOqxlfr4u88/s0/1.jpg-------------
+2015-10-29 16:07:52,671 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_05.jpg url DOWNLOADED http://3.bp.blogspot.com/-C1XGEOPz8xo/VhayY9E8YpI/AAAAAAADCjM/q8wwrjwUd7w/s0/1.jpg-------------
+2015-10-29 16:07:52,671 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_11.jpg url DOWNLOADED http://3.bp.blogspot.com/-JIfOA7oLHxY/VhbEzYtDH1I/AAAAAAADEBU/pwhtTAdtc4A/s0/1.jpg-------------
+2015-10-29 16:07:52,671 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_07.jpg url DOWNLOADED http://3.bp.blogspot.com/-D4MLANq8v78/VhayP5panNI/AAAAAAADCis/ztOv82BNSq8/s0/1.jpg-------------
+2015-10-29 16:07:52,671 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_12.jpg url DOWNLOADED http://3.bp.blogspot.com/-L1-VaZN4NZo/VhbFUKBdueI/AAAAAAADEDk/sT7d0NQQe5w/s0/1.jpg-------------
+2015-10-29 16:07:52,672 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_08.jpg url DOWNLOADED http://3.bp.blogspot.com/-DF3WxWByVww/VhazAdlhaJI/AAAAAAADClk/PO_t70cLaFA/s0/1.jpg
+
+if(slides_page_url_path.length>0){
+type_server2
+}else{
+type_server1
+}
+
+if(type_server!1){
+slides_pageslides_page_url_path
+}else{
+slides_pageslides_page-------------
+2015-10-29 16:07:52,672 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_06.jpg url DOWNLOADED http://3.bp.blogspot.com/-cWyK_8DD6Co/Vhay-mpsZUI/AAAAAAADClc/4W0DFHtFxWs/s0/1.jpg-------------
+2015-10-29 16:07:52,672 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_09.jpg url DOWNLOADED http://3.bp.blogspot.com/-eacirkeGXJI/VhaydhuJ5UI/AAAAAAADCjc/bGFyaVKtuUg/s0/1.jpg-------------
+2015-10-29 16:07:52,672 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_13.jpg url DOWNLOADED http://3.bp.blogspot.com/-Lvrv-Z3vBEU/VhbFLXMqoyI/AAAAAAADEC8/nKwVDpYwnT0/s0/1.jpg-------------
+2015-10-29 16:07:52,672 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_09.jpg url DOWNLOADED http://3.bp.blogspot.com/-gOHZOtu_cOg/VhbFNJMqOjI/AAAAAAADEDE/GYrcz19Zzcw/s0/1.jpg-------------
+2015-10-29 16:07:52,673 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_14.jpg url DOWNLOADED http://3.bp.blogspot.com/-n6hILpbFx50/VhbFAVxMEcI/AAAAAAADECM/i_DoKW8iWcc/s0/1.jpg-------------
+2015-10-29 16:07:52,673 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_16.jpg url DOWNLOADED http://3.bp.blogspot.com/-qPf9R_eMPxs/VhbFO4bZS5I/AAAAAAADEDM/MmIxKvgYwxU/s0/1.jpg-------------
+2015-10-29 16:07:52,673 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_10.jpg url DOWNLOADED http://3.bp.blogspot.com/-Ew7sKBWAjpg/Vhayf3ijRAI/AAAAAAADCjk/0zNE9vDhx6o/s0/1.jpg-------------
+2015-10-29 16:07:52,673 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_17.jpg url DOWNLOADED http://3.bp.blogspot.com/-T7njYOrulRU/VhbE4-mKBmI/AAAAAAADEBs/VoyVGdubQKE/s0/1.jpg-------------
+2015-10-29 16:07:52,673 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_13.jpg url DOWNLOADED http://3.bp.blogspot.com/-gNQjAW7hWXo/Vhay8Akd_mI/AAAAAAADClU/nj-Odcl7VkY/s0/1.jpg-------------
+2015-10-29 16:07:52,673 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_11.jpg url DOWNLOADED http://3.bp.blogspot.com/-felvS5sJhuw/VhaynXw1lDI/AAAAAAADCkE/jVCrdPnzaq4/s0/1.jpg-------------
+2015-10-29 16:07:52,673 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_18.jpg url DOWNLOADED http://3.bp.blogspot.com/-TkJoK095-EU/VhbFaHKxmZI/AAAAAAADED8/yp1MiALlTJg/s0/1.jpg-------------
+2015-10-29 16:07:52,673 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_15.jpg url DOWNLOADED http://3.bp.blogspot.com/-oiZAwM8SBFM/VhbFFxdWXMI/AAAAAAADECk/efyPL4QsGI4/s0/1.jpg-------------
+2015-10-29 16:07:52,674 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_14.jpg url DOWNLOADED http://3.bp.blogspot.com/-H0HwhahI378/VhayxRY2UsI/AAAAAAADCks/Z1v9GTaS58k/s0/1.jpg-------------
+2015-10-29 16:07:52,674 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_21.jpg url DOWNLOADED http://3.bp.blogspot.com/-Vcl9Zo-KVEU/VhbFD1z67zI/AAAAAAADECc/kPofxR19gMo/s0/1.jpg-------------
+2015-10-29 16:07:52,674 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_19.jpg url DOWNLOADED http://3.bp.blogspot.com/-TvL_W9qSu8c/VhbE898Z3nI/AAAAAAADEB8/XgC6_qIf6tI/s0/1.jpg-------------
+2015-10-29 16:07:52,674 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_15.jpg url DOWNLOADED http://3.bp.blogspot.com/-in4gyG9t5NU/VhaysouB8nI/AAAAAAADCkc/tDgHVhIXaQQ/s0/1.jpg-------------
+2015-10-29 16:07:52,674 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_22.jpg url DOWNLOADED http://3.bp.blogspot.com/-vUHTK_MJ-bY/VhbFWEIbnfI/AAAAAAADEDs/xRzPle_PIiI/s0/1.jpg-------------
+2015-10-29 16:07:52,674 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_20.jpg url DOWNLOADED http://3.bp.blogspot.com/-V9Q_2ho0FPc/VhbFCcIsNuI/AAAAAAADECU/zZA6cpBhb5M/s0/1.jpg-------------
+2015-10-29 16:07:52,674 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_16.jpg url DOWNLOADED http://3.bp.blogspot.com/-jN-Am0BtOGQ/VhayjnGaIfI/AAAAAAADCj0/1cC_6XCAJSk/s0/1.jpg-------------
+2015-10-29 16:07:52,675 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_25.jpg url DOWNLOADED http://3.bp.blogspot.com/-zDKrib5EVBU/VhbFQ0ebw4I/AAAAAAADEDU/kCITDsvxpq0/s0/1.jpg-------------
+2015-10-29 16:07:52,675 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_17.jpg url DOWNLOADED http://3.bp.blogspot.com/-KUrNsFiMPCI/VhaypCQM9qI/AAAAAAADCkM/JwcWoxZ1b2k/s0/1.jpg-------------
+2015-10-29 16:07:52,675 [5] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_18.jpg url DOWNLOADED http://3.bp.blogspot.com/-n3i5PDCxMGQ/VhayUrsVgBI/AAAAAAADCi8/WJ0DuIpE0A0/s0/1.jpg-------------
+2015-10-29 16:07:52,675 [6] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_12.jpg url DOWNLOADED http://3.bp.blogspot.com/-fiYzH_lA0BU/VhayzXjFeXI/AAAAAAADCk0/QF8k4AKfYJQ/s0/1.jpg-------------
+2015-10-29 16:07:52,675 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter6_19.jpg url DOWNLOADED http://3.bp.blogspot.com/-pFU3bsyhF2s/Vhayhx-VnpI/AAAAAAADCjs/0ad4PotMzRU/s0/1.jpg-------------
+2015-10-29 16:07:52,676 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_23.jpg url DOWNLOADED http://3.bp.blogspot.com/-x6lkbJ0IWGg/VhbFev5ldeI/AAAAAAADEEM/w6HNaZi0Jd4/s0/1.jpg
+
+if(slides_page_url_path.length>0){
+type_server2
+}else{
+type_server1
+}
+
+if(type_server!1){
+slides_pageslides_page_url_path
+}else{
+slides_pageslides_page-------------
+2015-10-29 16:07:52,676 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter5_24.jpg url DOWNLOADED http://3.bp.blogspot.com/-YgM8QmrwGNA/VhbE-jQYU6I/AAAAAAADECE/Z2vyJT5TLFQ/s0/1.jpg-------------
+2015-10-29 16:07:52,676 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter7_01.jpg url DOWNLOADED 
+
+
+http://3.bp.blogspot.com/-MYYK7oqz2m4/ViNhrRT3G-I/AAAAAAABMws/A3Ktf6VcWhQ/s0/1.jpg-------------
+2015-10-29 16:07:52,676 [8] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter7_03.jpg url DOWNLOADED http://1.bp.blogspot.com/-dg5CWtX8zdQ/ViNkSUjfSAI/AAAAAAABMzc/vRxvMqhJJ4o/s0/1445129931-DBA03PG21-copy.png-------------
+2015-10-29 16:07:52,676 [7] INFO MangaDownloadConsole.Utilities - -----------------EXIST file dragon-ball-after_Volume1_Chapter7_02.jpg url DOWNLOADED http://1.bp.blogspot.com/-B0EHsU8YkvU/ViNiJf0WpCI/AAAAAAABMxE/uEMMP64yrvE/s0/1445129909-DBA03PG00_Front_Cover.png-------------
+2015-10-29 16:07:53,514 [5] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-TaXm2QodECg/Vhay53_VUzI/AAAAAAADClM/Uyn7rnwEJBU/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter6_21.jpg
+2015-10-29 16:07:53,578 [6] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-RKYxijzZXU0/VhayNZsbQoI/AAAAAAADCik/tg3bRj5eW1E/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter6_20.jpg
+2015-10-29 16:07:53,955 [5] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-TfbXICJnZIA/Vhayqw_Sg6I/AAAAAAADCkU/gBxsv2bqRiM/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter6_22.jpg
+2015-10-29 16:07:54,054 [10] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-tI5cX16TT6Y/VhaybF__bXI/AAAAAAADCjU/qGJ-TvPBLqQ/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter6_23.jpg
+2015-10-29 16:07:54,156 [8] INFO MangaDownloadConsole.Utilities - Downloaded http://1.bp.blogspot.com/-GzJIAP6uuKk/ViNjtCOjm8I/AAAAAAABMy0/TTqPPXkOztg/s0/1445129926-DBA03PG15-copy.png ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter7_04.jpg
+2015-10-29 16:07:54,174 [7] INFO MangaDownloadConsole.Utilities - Downloaded http://1.bp.blogspot.com/-YoeSlAN2pkU/ViNj_-rdzwI/AAAAAAABMzI/TvUU8qQ4TyM/s0/1445129928-DBA03PG17-copy.png ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter7_05.jpg
+2015-10-29 16:07:54,646 [5] INFO MangaDownloadConsole.Utilities - Downloaded http://3.bp.blogspot.com/-UrN4DZhqqs8/Vhayve0q76I/AAAAAAADCkk/bYt1nNORwVI/s0/1.jpg ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter6_24.jpg
+2015-10-29 16:07:55,023 [10] INFO MangaDownloadConsole.Utilities - Downloaded http://2.bp.blogspot.com/-cxEsJ0FkT7w/ViNiiwkjLrI/AAAAAAABMxo/tUM_iWoLN7o/s0/1445129918-DBA03PG06-copy.png ===========>D:\Manga\dragon-ball-after\dragon-ball-after_Vol1\dragon-ball-after_Volume1_Chapter7_06.jpg
+2015-10-29 16:07:57,092 [1] INFO MangaDownloadConsole.Utilities - Hello user,USAGE :
+2015-10-29 16:07:57,099 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="(Manga_link Manga_link)" -path=(Save_Path) -vol=[ChapterPerVol] -max=[max task run an instance] -pdf=[true or false]
+2015-10-29 16:07:57,100 [1] INFO MangaDownloadConsole.Utilities - when () means require,[] means options.Example:
+2015-10-29 16:07:57,100 [1] INFO MangaDownloadConsole.Utilities - MangaDownloadConsole.exe -link="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" -path=D:\Manga\ -vol=10 -max=10 -pdf=true -startChap=10 -endChap=20OR -add="http://manga24h.com/1648/Puppy-Lovers.html http://manga24h.com/3621/A-bout.html" to update or add to database
+2015-10-29 16:07:57,101 [1] INFO MangaDownloadConsole.Utilities - link not defined,will get from db!
+2015-10-29 16:07:57,170 [1] INFO MangaDownloadConsole.Utilities - 
+
+we will get manga from link : http://truyentranhtuan.com/dragon-ball-after/ 
+Save path : D:\Manga\
+Chapter per vol :20
+Make pdf : true
+2015-10-29 16:07:57,170 [1] INFO MangaDownloadConsole.Utilities - Sleep 5s before process,please check params

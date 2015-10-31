@@ -19,6 +19,13 @@ namespace MangaDownloadConsole
 	{
 		public static void Main(string[] args)
 		{
+			string t1 = "http://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?containerfocus&gadgeta&no_expand1&resize_h0&rewriteMimeimage/*&urlhttps://3.bp.blogspot.com/-T968yd6Y5Hk/VTr_asp0h-I/AAAAAAACS70/p7ztOilU__A/d/re-monster-chap-13-vechai-19.png";
+			Utilities.ValidateTTTImageLink(t1);
+			
+			t1 = "//3.bp.blogspot.com/-w8wPuwCU-bE/VGTc8ZGsn4I/AAAAAAAAQpk/9J23YrWVls8/s0/the-gamer-truyentranhtuan-com-chap-63-trang-001.png";
+			Utilities.ValidateTTTImageLink(t1);
+			
+			
 			//add timer
 			System.Timers.Timer aTimer = new System.Timers.Timer();
 			aTimer.Elapsed+=new ElapsedEventHandler(OnTimedEvent);

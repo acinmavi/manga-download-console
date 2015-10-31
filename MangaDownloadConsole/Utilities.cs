@@ -654,8 +654,18 @@ namespace MangaDownloadConsole
 				if(link.Contains(extension)){
 					int index = link.IndexOf(extension);
 					link = link.Substring(0,index+extension.Length);
+					break;
+					
 				}
 			}
+			int multiHttp = link.LastIndexOf("http");
+			if(multiHttp >0){
+				link = link.Substring(multiHttp);
+			}
+			if(!link.StartsWith("http")){
+				link = "http:" + link;
+			}
+			
 			return link;
 		}
 		

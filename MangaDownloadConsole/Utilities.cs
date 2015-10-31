@@ -174,6 +174,7 @@ namespace MangaDownloadConsole
 				}
 			}catch(Exception e)
 			{
+				WriteError(e.StackTrace);
 				WriteLine(e.Message);
 			}
 			return lsManga;
@@ -423,7 +424,6 @@ namespace MangaDownloadConsole
 			                              			}catch(Exception e)
 			                              			{
 			                              				WriteLine("got exception when download url :"+url+" Error:"+e.Message);
-			                              				url = ValidateTTTImageLink(url);
 			                              				if(i==RETRY)
 			                              				{
 			                              					WriteError(url+"===="+fileName);
@@ -634,6 +634,7 @@ namespace MangaDownloadConsole
 					.Select(x=>x.Split(new char[]{' '})[0])
 					.Select(x=>x.Split(new string[]{ Environment.NewLine },StringSplitOptions.None)[0])
 					.Select(x=>ValidateTTTImageLink(x))
+					.Where(x=>!String.IsNullOrEmpty(x))
 					.ToList();
 				if(reverse)
 				{
@@ -665,7 +666,10 @@ namespace MangaDownloadConsole
 			if(!link.StartsWith("http")){
 				link = "http:" + link;
 			}
-			
+			if(link.Contains("if(") || link.Contains("}else{")){
+				WriteError("we got some ERROR link here : " + link);
+				return null;
+			}
 			return link;
 		}
 		
@@ -691,15 +695,20 @@ namespace MangaDownloadConsole
 					.Select(o=> o.Replace("varslides_page_path","")).Select(o=> o.Replace("varslides_page_url_path",""))
 					.Select(o=> o.Replace("http://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?containerfocus&gadgeta&no_expand1&resize_h0&rewriteMimeimage%2F*&url",""))
 					.Select(o=> ValidateTTTImageLink(o))
+					.Where(x=>!String.IsNullOrEmpty(x))
 					.ToList();
 //				WriteLine(string.Join("\r\n",h));
 //				return h;
 				
 				Dictionary<string,string> dic = new Dictionary<string,string>();
 				for (int i = 0; i < list.Count; i++) {
-					string tempRootPath = Path.Combine(rootPath,ChapterLink.MangaName);
+					try {
+						string tempRootPath = Path.Combine(rootPath,ChapterLink.MangaName);
 					string path = Path.Combine(tempRootPath,ChapterLink.MangaName+"_Vol"+GetNumber(volume,maxVolume));
 					dic[list[i]] = Path.Combine(path,ChapterLink.MangaName+"_Volume"+GetNumber(volume,maxVolume)+"_Chapter"+GetNumber(ChapterLink.ChapterNumber,maxChapter)+"_"+GetNumber((i+1),list.Count)+".jpg");
+					} catch (Exception ex) {
+						WriteError(ex.StackTrace);
+					}
 				}
 				return dic;
 			}
